@@ -16,6 +16,11 @@ module.exports = {
         sourceCodePro: ["Source Code Pro", "sans-serif"]
 
       },
+      letterSpacing: {
+
+        widest: '.25em'
+  
+      },
     },
     screens: {
       xs: "480px",
@@ -25,6 +30,7 @@ module.exports = {
       lg: "1200px",
       xl: "1700px",
     },
+
   },
   plugins: [],
 };
