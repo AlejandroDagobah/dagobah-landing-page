@@ -27,15 +27,15 @@ function App() {
 
           </div>
           
-          <div className={`${styles.flexStart}`}>
-            <div className={`${styles.boxWidth}`}>
+          <div className='justify-between'>
+            <div className={`${styles.boxWidth, styles.boxPaddingX}`}>
               <Hero/>
             </div>
           </div>
           
           <div className={`${styles.flexStart}`}>
 
-            <div className={`${styles.boxWidth}`}>
+            <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>
               <About/>
               <Websites/>
               <Others/>

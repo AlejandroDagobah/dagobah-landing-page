@@ -16,6 +16,22 @@ body {
 
   background-color: #F5F5F5;
 }
+
+h2, h3, h4 h5{
+  font-size: 2.75rem;
+  font-weight: 700;
+  font-family: Crimson Pro, serif;
+}
+
+@media only screen and (max-width:750px){
+  h2, h3, h4 h5{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Crimson Pro, serif;
+}
+  
+}
+
 /*
 .App{
   margin: 50px 5% 0 5%;
