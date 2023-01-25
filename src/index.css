@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Crimson+Pro:regular,medium,bold,black&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:regular,medium,bold,black&display=swap");
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,142 +24,24 @@ h2, h3, h4 h5{
   font-family: Crimson Pro, serif;
 }
 
-@media only screen and (max-width:750px){
-  h2, h3, h4 h5{
-  font-size: 2rem;
+.website > h3{
+  font-size: 1.8rem;
   font-weight: 700;
   font-family: Crimson Pro, serif;
+
 }
+
+@media only screen and (max-width:750px){
+  h2, h3, h4 h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Crimson Pro, serif;
+  }
+  h2 > span, h3 > span, h4 > span, h5 > span{
+    margin-top: 2px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: Crimson Pro, serif;
+  }
   
 }
-
-/*
-.App{
-  margin: 50px 5% 0 5%;
-
-}
-
-HEDEAR
-
-.header{
-  display: flex;
-  flex: content;
-  justify-content: space-between;
-}
-a{
-  text-decoration: none;
-  color: #0D1821;
-}
-
-.nav{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-.nav > .nav-item{
-  font-family: 'Source Code Pro';
-  font-size: 15px;
-  text-decoration: none;
-  color: #0D1821;
-  margin-right: 20px;
-  font-weight: 500;
-  transition: 0.2s;
-  align-content: center;
-
-  padding: 10px;
-}
-
-
-.nav > .nav-item:hover{
-  background-color: #ff5a6038;
-}
-
-
-.nav-item> .number{
-  color: #FF5A5F !important;
-}
-
-.logo{
-  max-height: 40px;
-}
-
-.action-btn{
-  border: 2px solid #2592A4;
-  padding: 10px 20px 8px 20px;
-  border-radius: 5px;
-
-  color: #2592A4;
-  font-family: Inter;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.095em;
-  text-align: center;
-  transition: 0.2s;
-
-}
-
-.hero-btn{
-  width: 200px;
-  letter-spacing: 2px;
-  font-size: 16px;
-  margin-top: 30px;
-}
-
-.action-btn:hover{
-  background-color: #2591a41e;
-}
-
-HERO
-
-.hero{
-  margin: 10% 5% 15% 10%;
-  display:grid;
-  grid-template-columns: 3fr 1.5fr;
-  grid-column-gap: 10px; 
-}
-.hero--text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-.hero--image{
-  display: flex;
-  justify-content: start;
-}
-
-h1{
-  font-size: 65px;
-  font-family: 'Crimson Pro';
-  font-weight: 600;
-  margin: 0;
-  line-height: 65px;
-}
-.subtitle{
-  font-size: 20px;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.red-title{
-  color: #FF5A5F;
-}
-
-.eye{
-  position: absolute;
-  background-color: #2592A4;
-  width: 20px;
-  height: 20px;
-  top: 100px;
-
-}
-.ball{
-  width: 50px;
-  height: 50px;
-  position: absolute;
-}
-
-*/

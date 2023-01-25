@@ -18,7 +18,7 @@ module.exports = {
       },
       letterSpacing: {
         customWide: '.1em',  
-      },
+      }
     },
     screens: {
       xs: "480px",

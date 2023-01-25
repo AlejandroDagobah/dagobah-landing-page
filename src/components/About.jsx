@@ -4,7 +4,7 @@ export default function About() {
 
     return(
         <div className=" my-28">
-            <h2 className="flex whitespace-nowrap items-center w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="text-2xl mt-1 mr-1 text-aleRed ">01.</span> <span></span> Acerca de mí</h2>
+            <h2 className="flex whitespace-nowrap items-center w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleRed">01.</span> <span></span> Acerca de mí</h2>
 
             <div className="flex flex-col sm:flex-row sm:justify-between">
                 <div>
