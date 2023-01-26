@@ -31,7 +31,7 @@ h2, h3, h4 h5{
 
 }
 
-@media only screen and (max-width:750px){
+@media only screen and (max-width:480px){
   h2, h3, h4 h5{
     font-size: 1.5rem;
     font-weight: 700;
@@ -43,5 +43,27 @@ h2, h3, h4 h5{
     font-weight: 700;
     font-family: Crimson Pro, serif;
   }
+
   
+.website > h3{
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: Crimson Pro, serif;
+
+}
+
+  
+}
+
+.web-img{
+  animation-name: float;
+  animation-duration: 3s;
+  transition: ease-in;
+}
+
+@keyframes float{
+  0%{transform:translateY(0px);}
+  50%{transform: translateY(8px);}
+  100%{transform: translateY(0px);}
+
 }

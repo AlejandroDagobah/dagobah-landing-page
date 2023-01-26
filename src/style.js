@@ -14,6 +14,9 @@ const styles = {
   
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
+
+    websitesImg: "web-img animate-pulse relative max-w-none"
+  //top-[0%] -left-[0%] max-w-none w-[0%] ss:top-[0%] ss:w-[0%] ss:left-[0%] md:top-[0%] md:left-[0%] md:w-[100%]
   };
   
   export const layout = {
