@@ -7,7 +7,6 @@ import Websites from './components/Websites'
 import Others from './components/Others'
 import Work from './components/Work'
 import Contact from './components/Contact'
-
 import styles from './style';
 
 function App() {
