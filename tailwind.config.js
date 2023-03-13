@@ -9,6 +9,8 @@ module.exports = {
         secondary: "#0D1821",
         aleBlue: "#2592A4",
         aleRed: "#FF5A5F",
+        aleRedLight : "#FFCFD0",
+        aleBlueLight : "#DAEEF1"
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -30,5 +32,8 @@ module.exports = {
     },
 
   },
-  plugins: [],
+  plugins: [
+		require("tailwindcss-animate"),
+		// ...
+	],
 };

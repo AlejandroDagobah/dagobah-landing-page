@@ -12,7 +12,7 @@ export default function Header(props) {
     })
 
     return(
-        <div className="w-full flex justify-between items-center py-4 sm:py-16 navbar">
+        <div className="w-full flex justify-between items-center py-4 sm:pb-20 sm:pt-12 navbar">
             <img src="img/aledevelops-logo.png" className="w-52 sm:w-[180px]"/>
 
             <nav className="hidden md:flex">

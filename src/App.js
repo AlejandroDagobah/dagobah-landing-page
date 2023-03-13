@@ -8,10 +8,16 @@ import Others from './components/Others'
 import Work from './components/Work'
 import Contact from './components/Contact'
 import styles from './style';
+import FixedContact from './components/FixedContact'
+
+
+
 
 function App() {
   
   const [toggleMenu, setToggleMenu] = React.useState(false);
+  const [coor, setCoor] = React.useState(0)
+
 
 
   return (
@@ -22,23 +28,32 @@ function App() {
 
             <div className={`${styles.boxWidth}`}>
               <Header toggle={toggleMenu} setToggle={setToggleMenu}/>
+              <FixedContact/>
             </div>
 
           </div>
           
           <div className='justify-between'>
-            <div className={`${styles.boxWidth, styles.boxPaddingX}`}>
-              <Hero/>
+            <div className={`${styles.boxWidth, styles.boxPaddingX} my-14`}>
+              <Hero coor={coor}/>
             </div>
           </div>
           
-          <div className={`${styles.flexStart}`}>
+          <div>
+
+
+
+            <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 lg:px-36 px-4`}>
+              <About/>
+            </div>
+
+            <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
+              <Work/>
+            </div>
 
             <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>
-              <About/>
               <Websites/>
               <Others/>
-              <Work/>
               <Contact/>
             </div>
 

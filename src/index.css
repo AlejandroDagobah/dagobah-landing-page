@@ -18,8 +18,14 @@ body {
   background-color: #F5F5F5;
 }
 
-h2, h3, h4 h5{
-  font-size: 2.75rem;
+h2{
+  font-size: 2.1rem;
+  font-weight: 700;
+  font-family: Crimson Pro, serif;
+}
+
+h3, h4 h5{
+  font-size: 1.4rem;
   font-weight: 700;
   font-family: Crimson Pro, serif;
 }
@@ -71,6 +77,29 @@ h2, h3, h4 h5{
 
 
 /**ALE VECTOR**/
+.eye{
+}
 
-.st0{fill:#0D1821;}
-.st1{fill:#FFFFFF;}
+.svg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-container{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+#pupil{
+  transform-origin: center;
+
+}
+
+
+#mail{
+  writing-mode: vertical-lr;
+}
