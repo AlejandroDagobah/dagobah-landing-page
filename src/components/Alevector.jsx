@@ -25,6 +25,7 @@ export default function Alevector(){
     
     let windowWidth = window.innerWidth
     let windowHeight = window.innerHeight
+    const limit = 1100
     
     
     function setWindowSize(e) {
@@ -33,8 +34,9 @@ export default function Alevector(){
     }  
   
     function mouseMove(e) {
-      cursorPos = { x: e.clientX, y: e.clientY }
-      initFollow()
+      cursorPos = { x: e.clientX, y: e.clientY, pageY: e.pageY}
+        initFollow()
+      
     }  
   
     function touchMove(e) {
@@ -43,12 +45,13 @@ export default function Alevector(){
     }  
     
     function followCursor(el, xRatio, yRatio) {
-  
       const elementOffset = el.getBoundingClientRect()
       const centerX = elementOffset.x + elementOffset.width / 2
       const centerY = elementOffset.y + elementOffset.height / 2
       const distanceLeft = Math.round(((cursorPos.x - centerX) * 100) / windowWidth)
-      const distanceTop = Math.round(((cursorPos.y - centerY) * 100) / windowHeight)
+      let distanceTop
+
+      cursorPos.pageY <= limit ? distanceTop = Math.round(((cursorPos.y - centerY) * 100) / windowHeight) : distanceTop = 50
       
       el.style.transform = `translate(${distanceLeft / xRatio}px, ${((distanceTop) / yRatio)}px)`
       
@@ -197,12 +200,12 @@ export default function Alevector(){
           </g>
           <g id="browns">
             <path
-              className="brown"
+              className="brown st0"
               d="M310.5 243.3c-1.8-.2-16.8-7.5-18.6-7.7-17.3-1.3-37-1.2-52.8 5.5-1.8.8-7.6 1-12.1 2.1 9.6-13.4 23.4-19.2 33.9-21.2 10.9-2.1 21.9-3.1 32.6-1 2 .4 9.1 2.2 15 3.8 4.5 1.2 13.2 3.1 15.1 8.4 1.2 3.3-2.6 8.5-2.6 9.2-3.5.3-7.1 1.2-10.5.9z"
               id="brownL"
             />
             <path
-              className="brown"
+              className="brown st0"
               d="M392.2 239.1c1.8-.1 17.1-6.7 19-6.8 17.3-.4 37.1.6 52.5 8.1 1.8.9 7.6 1.3 12 2.7-9-13.9-22.4-20.3-32.8-22.8-10.8-2.7-21.7-4.2-32.6-2.6-2 .3-9.2 1.7-15.1 3.1-4.6 1-13.4 2.4-15.5 7.6-1.4 3.2 2.2 8.6 2.1 9.3 3.5.4 6.9 1.5 10.4 1.4z"
               id="brownR"
             />
@@ -213,8 +216,8 @@ export default function Alevector(){
               d="M307.3 268.6c7.7 1.9 14.7 3.6 23.1 5.6-1.4-2.8-1.6-4.3-2.5-5.1-24.3-20.1-58.9-18.7-80.8 3.3-1 1-1.9 2.2-2.2 3.4-.3 1.2 0 2.9.8 3.8.8.9 2.7 1.6 3.7 1.2 2.5-1.1 4.8-2.8 7.1-4.2 3-1.8 5.6-4.8 9.8-4 0 0 15.6-12.3 41-4zM263.3 309c-2.8-1.3-5.2-2.4-7.6-3.6-1.1-3.1.8-4.3 3.2-5 .9-.3 1.9-.6 2.8-.4 14.1 3.7 28 .4 42-.5 3.1-.2 6.2.1 9.3.2l.3 3.3c-4.2 1.5-8.3 3.1-13.1 4.9l-36.9 1.1zM444.8 267c7.7 1.9 14.7 3.6 23.1 5.6-1.4-2.8-1.6-4.3-2.5-5.1-24.3-20.1-58.9-18.7-80.8 3.3-1 1-1.9 2.2-2.2 3.4-.3 1.2 0 2.9.8 3.8.8.9 2.7 1.6 3.7 1.2 2.5-1.1 4.8-2.8 7.1-4.2 3-1.8 4.8-2.2 9.8-4-.1 0 15.6-12.4 41-4zM400.8 307.4c-2.8-1.3-5.2-2.4-7.6-3.6-1.1-3.1.8-4.3 3.2-5 .9-.3 1.9-.6 2.8-.4 14.1 3.7 28 .4 42-.5 3.1-.2 6.2.1 9.3.2l.3 3.3c-4.2 1.5-8.3 3.1-13.1 4.9l-36.9 1.1z"
             />
             <g id="pupil" transform="translate(0,0)">
-              <circle className="eye" cx={286.7} cy={282.6} r={19} />
-              <circle className="eye" cx={422.3} cy={280.9} r={19} />
+              <circle className="eye st0" cx={286.7} cy={282.6} r={19} />
+              <circle className="eye st0" cx={422.3} cy={280.9} r={19} />
             </g>
           </g>
         
