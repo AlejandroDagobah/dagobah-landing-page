@@ -28,7 +28,6 @@ function App() {
 
             <div className={`${styles.boxWidth}`}>
               <Header toggle={toggleMenu} setToggle={setToggleMenu}/>
-              <FixedContact/>
             </div>
 
           </div>
@@ -57,7 +56,13 @@ function App() {
               <Contact/>
             </div>
 
+            
+
           </div>
+      </div>
+
+      <div>
+        <FixedContact/>
       </div>
     </div>
   );
