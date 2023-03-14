@@ -1,6 +1,7 @@
 import React from "react";
-import { moveAvatar } from "../avatar";
 import Alevector from "./Alevector";
+
+import styles from "../style";
 
 export default function Hero(props) {
 
@@ -17,7 +18,7 @@ export default function Hero(props) {
                     <span className="text-aleRed text-3xl sm:text-4xl md:text-7xl">Y desarrollo proyectos digitales.</span>
                 </h1>
 
-                <a href="#" className="text-aleBlue font-extrabold tracking-customWide text-2xl mt-6 py-2 px-7 border-4 sm:border-2 sm:mt-10 sm:text-xl border-aleBlue rounded-md">¡HABLEMOS!</a>
+                <a href="https://wa.me/593962801800" className={`${styles.blueButton}`}>¡Hablemos!</a>
             
             </div>
             <div className="image my-6 md:my-0 flex justify-center sm:justify-end">

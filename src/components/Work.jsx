@@ -25,7 +25,7 @@ export default function Work() {
 
     
     return(
-        <div>
+        <div id="work">
             
             <h2 className="flex items-center whitespace-nowrap w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleRed">02.</span>Donde he trabajado</h2>
             <div className="flex my-6">

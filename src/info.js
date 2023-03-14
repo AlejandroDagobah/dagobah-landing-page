@@ -1,3 +1,6 @@
+import {IconFolders, IconBrandGithub, IconLink, IconDeviceGamepad2, IconAppWindow, IconMovie, IconLayoutCollage, IconPhoto, IconBox, IconPackage} from "@tabler/icons";
+
+
 const websites = [
     {
         title:'Joyería Flor de la Vida',
@@ -118,5 +121,71 @@ const work = [
     },
 ]
 
+const others = [
+    {
+        icon: IconFolders,
+        iconLink: IconBrandGithub,
+        title:'Joyería Flor de la Vida',
+        repo: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        description:'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.',
+        tags: ['e-commerce', 'Web design'],
+    },
+    {
+        icon: IconDeviceGamepad2,
+        iconLink: IconBrandGithub,
+        title:'QualityB2B',
+        repo: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        description:'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.',
+        tags: ['e-commerce', 'Web design'],
+    },
+    {
+        icon: IconMovie,
+        iconLink: IconBrandGithub,
+        title:'Fenix.ec',
+        repo: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        description:'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.',
+        tags: ['e-commerce', 'Web design'],
+    },
+    {
+        icon: IconLayoutCollage,
+        iconLink: IconBrandGithub,
+        title:'Más1',
+        repo: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        description:'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.',
+        tags: ['e-commerce', 'Web design'],  
+    },
+    {
+        icon: IconPhoto,
+        iconLink: IconBrandGithub,
+        title:'Más2',
+        repo: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        description:'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.',
+        tags: ['e-commerce', 'Web design'],
+        
+    },
+    {
+        icon: IconBox,
+        iconLink: IconBrandGithub,
+        title:'Más3',
+        repo: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        description:'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.',
+        tags: ['e-commerce', 'Web design'],
+    },
+    {
+        icon: IconPackage,
+        iconLink: IconBrandGithub,
+        title:'Más3',
+        repo: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
+        description:'Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.',
+        tags: ['e-commerce', 'Web design'],
+    }
+]
 
-export {websites, work}
+export {websites, work, others}

@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
 
     return(
-        <div>
+        <div id="about-me">
 
             <div className="flex flex-col sm:flex-row sm:justify-between">
                 <div className="sm:basis-1/2">

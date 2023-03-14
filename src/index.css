@@ -103,3 +103,20 @@ h3, h4 h5{
 #mail{
   writing-mode: vertical-lr;
 }
+
+.others::before {
+  content: '';
+  width: 0;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.others > *:first-child{
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px; /* If you need scroll offset try this magic! */
+}

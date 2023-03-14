@@ -52,10 +52,15 @@ function App() {
 
             <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>
               <Websites/>
-              <Others/>
-              <Contact/>
             </div>
 
+            <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
+              <Others/>
+            </div>
+
+            <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>       
+              <Contact/>
+            </div>
             
 
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import {IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconBrandDribbble, IconMail, IconStar, IconGitFork} from "@tabler/icons";
+import {IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconBrandDribbble, IconBrandWhatsapp, IconMail, IconStar, IconGitFork} from "@tabler/icons";
 
 
 export default function FixedContact() {
@@ -34,6 +34,11 @@ export default function FixedContact() {
                         <li className="py-2">
                             <a href="https://dribbble.com/Dagobah" target="_blank">
                                 <IconBrandDribbble size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
+                            </a>
+                        </li>
+                        <li className="py-2">
+                            <a href="https://wa.me/593962801800" target="_blank">
+                                <IconBrandWhatsapp size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                             </a>
                         </li>
                         
@@ -79,6 +84,11 @@ export default function FixedContact() {
                         <li className="p-4">
                             <a href="mailto:alejandrodagobah@gmail.com" target="_blank">
                                 <IconMail size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
+                            </a>
+                        </li>
+                        <li className="p-4">
+                            <a href="https://wa.me/593962801800" target="_blank">
+                                <IconBrandWhatsapp size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                             </a>
                         </li>
                         
