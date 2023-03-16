@@ -40,8 +40,9 @@ export default function Alevector(){
     }  
   
     function touchMove(e) {
-      cursorPos = { x:e.targetTouches[0].offsetX, y: e.targetTouches[0].offsetY}
+      cursorPos = { x:e.touches[0].clientX, y: e.touches[0].clientY, pageY: e.touches[0].pageY}
       initFollow()
+      console.log("ON", e.pageY);
     }  
     
     function followCursor(el, xRatio, yRatio) {

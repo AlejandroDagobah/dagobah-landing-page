@@ -17,7 +17,7 @@ const styles = {
     marginY: "sm:my-16 my-6",
 
     websitesImg: "web-img animate-pulse relative max-w-none",
-    blueButton: "text-aleBlue font-medium tracking-customWide text-2xl mt-6 py-2 px-7 border-4 sm:border-2 sm:mt-10 sm:text-xl border-aleBlue rounded-md transition duration-150 hover:bg-aleBlueLight hover:translate-y-[-0.2rem]"
+    blueButton: "text-aleBlue font-medium tracking-customWide text-1xl  mt-6 py-2 px-7 border-4 border-2 sm:mt-10 sm:text-xl border-aleBlue rounded-md transition duration-150 hover:bg-aleBlueLight hover:translate-y-[-0.2rem]"
   //top-[0%] -left-[0%] max-w-none w-[0%] ss:top-[0%] ss:w-[0%] ss:left-[0%] md:top-[0%] md:left-[0%] md:w-[100%]
   };
   

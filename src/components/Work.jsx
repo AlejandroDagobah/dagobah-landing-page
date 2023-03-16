@@ -7,7 +7,18 @@ export default function Work() {
     console.log(currentJob, 'hola');
 
     const buttons = work.map((item)=>{
-        return <button key={work.indexOf(item)} onClick={()=>changeInfo(item.company)} className="p-2 pl-3 text-md text-left font-bold font-crimsonPro w-full transition duration-150 active:bg-aleBlueLight active:text-aleBlue hover:bg-aleBlueLight hover:text-aleBlue">
+        
+        let style
+
+        if(item.company == currentJob.company){
+            style = "p-2 pl-3 text-md text-left font-bold font-crimsonPro w-full transition duration-150  bg-aleBlueLight text-aleBlue"
+            
+        }else{
+            style = "p-2 pl-3 text-md text-left font-bold font-crimsonPro w-full transition duration-150 bg-primary text-secondary hover:bg-aleBlueLight hover:text-aleBlue"
+
+        }
+
+        return <button key={work.indexOf(item)} onClick={()=>changeInfo(item.company)} className={`${style}`}>
                 {item.company}
             </button>
     })

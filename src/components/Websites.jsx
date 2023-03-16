@@ -76,13 +76,13 @@ export default function Website() {
 
     return(
         <div id="projects" className="my-28">
-            <div className="flex">
+            <div className="flex items-center">
                 <h2 className="flex items-center whitespace-nowrap w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleRed">02.</span>Trabajo Destacado</h2>
                 
-                <div className="ml-4 mt-5">
+                <div className="mt-2">
                     <IconArrowBadgeLeft size={30} onClick={()=>setWebsites(-1)} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                 </div>
-                <div className="ml-4 mt-5">
+                <div className="mt-2">
                     <IconArrowBadgeRight size={30} onClick={()=>setWebsites(1)} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                 </div>
 

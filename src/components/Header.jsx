@@ -7,17 +7,15 @@ export default function Header(props) {
 
     var navElements = navLinks.map((item, index)=>{
 
-        return <a key={index} href={item.link} onClick={() => props.setToggle(prevToggle=>(!prevToggle))} className={`mb-16 text-primary text-lg flex font-sourceCodePro md:items-center md:justify-center md:px-2 md:text-secondary md:mb-0 md:text-sm md:p-2 transition duration-150 hover:bg-secondaryDarker md:hover:bg-aleRedLight hover:translate-y-[-0.2rem]`}><span className="number text-aleRed pr-2 md:pr-2">0.{index + 1}</span> {item.title}</a>
+        return <a key={index} href={item.link} onClick={() => props.setToggle(false)} className={`mb-16 text-primary text-lg flex font-sourceCodePro md:items-center md:justify-center md:px-2 md:text-secondary md:mb-0 md:text-sm md:p-2 transition duration-150 hover:bg-secondaryDarker md:hover:bg-aleRedLight hover:translate-y-[-0.2rem]`}><span className="number text-aleRed pr-2 md:pr-2">0.{index + 1}</span> {item.title}</a>
 
     })
 
     React.useEffect(()=>{
         if (props.toggle) {
-            
-            document.body.style.overflow = "hidden"
-            console.log("hola");
+            document.body.style.overflowY = "hidden"
         }else{
-            document.body.style.overflow = "scroll"
+            document.body.style.overflowY = "scroll"
 
         }
 
