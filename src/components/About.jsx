@@ -15,12 +15,20 @@ export default function About() {
                             <li className="py-2">Javascript (ES6+)</li>
                             <li className="py-2">React</li>
                             <li className="py-2">Wordpress</li>
+                            <li className="py-2">Unity - C#</li>
+                            <li className="py-2">Node.js (Básico)</li>
+                            <li className="py-2">PHP (Básico)</li>
                         </ul>
                         <ul className="list-disc ml-20 marker:text-aleRed">
                             <li className="py-2">Photoshop</li>
                             <li className="py-2">Illustrator</li>
                             <li className="py-2">After Effects</li>
                             <li className="py-2">Premiere Pro</li>
+
+                            <li className="py-2">Figma</li>
+                            <li className="py-2">SEO</li>
+
+                            <li className="py-2 ">Inglés Conversacional</li>
                         </ul>
                     </div>
                 </div>
