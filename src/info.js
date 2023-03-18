@@ -65,65 +65,45 @@ const websites = [
 
 const work = [
     {
-        charge:'Web developer',
+        charge:'Web Developer',
         company:'Joyería Flor de la Vida',
-        date:'May 2018 - Present',
+        date:'Mayo 2018 - Presente',
         points:[
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
-        ]
+            "Desarrollé la página Web de la empresa abordando tanto el Diseño UI/UX como el desarrollo en Wordpress, estableciendo la identidad online de Joyería Flor de la Vida como una de las mejores en el mercado.",
+            "Trabajé en la optimización para buscadores o (SEO) de la página web donde pudimos alcanzar los primeros puestos en Google de búsquedas relacionadas.",
+            "Diseño de catálogos, trípticos, materiales de impresión además de retoque fotográfico especializado para joyería."
+        ],
+        url:"https://joyeriaflordelavida.com/"
     },
     {
-        charge:'Web developer',
-        company:'Farola ',
-        date:'May 2018 - Present',
+        charge:'IT Teacher',
+        company:'MCD School',
+        date:'Septiembre 2022 - Presente',
         points:[
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
-        ]
+            "Trabajé medio tiempo enseñando desarrollo web (HTML, CSS, JS) e informática donde cree distintas aplicaciones para la enseñanza a jóvenes y niños entre las que se encuentran: un <a class='text-aleBlue hover:underline' href='https://github.com/AlejandroDagobah/trigonofiesta-dagobah'>Visualizador de trigonometría</a>, un <a class='text-aleBlue hover:underline' href='https://github.com/AlejandroDagobah/apocalyse-game-enable3D'>Juego de supervivencia</a> utilizando Enable.js y un <a class='text-aleBlue hover:underline' href='https://github.com/MCD-School/atom-visuzlizer'>Visualizador de átomos</a> utilizando Three.js.",
+        ],
+        url:"https://www.miconscienciadespierta.com/"
     },
     {
-        charge:'Web developer',
-        company:'C.C     MCD',
-        date:'May 2018 - Present',
+        charge:'Freelance Graphic Designer',
+        company:'Farola',
+        date:'Abril 2022 - Presente',
         points:[
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
-        ]
+            "Trabaje para Farola como Diseñador Gráfico desarrollando una propuesta de diseño para la campaña de Solo una Vida del Ministerio de la Salud.",
+            "Diseñe tres comerciales con temas educativos para el Ministerio de la Salud. Ecuatoriano en Motion graphics y Pixel Art.",
+            "Desarrolle la identidad corporativa y propuesta de marca de Farola y su web actual."
+        ],
+        url:"https://www.farola.com.ec/"
     },
     {
-        charge:'Web developer',
-        company:'Quality',
-        date:'May 2018 - Present',
+        charge:'Freelance Web Developer',
+        company:'MCD Manager',
+        date:'Julio 2018 - Septiembre 2021',
         points:[
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
+            "Colabore con el equipo de MCDmanager para crear, diseñar y desarrollar la Identidad gráfica, Packaging y Product design de nuestros clientes.",
+            "Trabaje como principal Front End Developer y Diseñador Gráfico desarrollando websites que perduren para nuestros clientes.",
         ]
-    },
-    {
-        charge:'Web developer',
-        company:'Fenix Delivery',
-        date:'May 2018 - Present',
-        points:[
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
-        ]
-    },
-    {
-        charge:'Web developer',
-        company:'Natomovil',
-        date:'May 2018 - Present',
-        points:[
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis"
-        ]
-    },
+    }
 ]
 
 const others = [

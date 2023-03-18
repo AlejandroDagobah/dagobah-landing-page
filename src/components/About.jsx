@@ -8,7 +8,14 @@ export default function About() {
             <div className="flex flex-col sm:flex-row sm:justify-between">
                 <div className="sm:basis-1/2">
                     <h2 className="flex whitespace-nowrap items-center w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleRed">01.</span> <span></span> Acerca de mí</h2>
-                    <p className="mb-6 leading-5 sm:pr-10 md:pr-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio.</p>
+                    <p className="mb-6 mt-2 leading-5">Soy un joven de 23 años apasionado por la tecnología, que ama aprender nuevas cosas cada día. Tengo mucho entusiasmo a la hora de trabajar en nuevos proyectos.
+    	                                                            <br/><br/>
+                                                                    Desde muy pequeño me interesaban las computadoras, los videojuegos, el internet y el arte, estas pasiones evolucionaron al aprender <span className="text-aleBlue">informática, desarrollo de videojuegos, desarrollo web y diseño gráfico</span> respectivamente. 
+                                                                    <br /><br />
+                                                                    Ahora me dedico a trabajar desarrollando proyectos y soluciones digitales y he tenido el placer de trabajar para diferentes empresas elaborando su presencia digital. 
+                                                                    <br /><br />
+                                                                    Estas son algunas de mis <span className="text-aleBlue">habilidades </span>destacadas:
+                    </p>
                     <div className="flex text-sm font-sourceCodePro">
                         <ul className="list-disc ml-4 marker:text-aleRed">
                             <li className="py-2">HTML + CSS</li>
