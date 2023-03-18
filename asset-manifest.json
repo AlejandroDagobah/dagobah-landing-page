@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dagobah-landing-page/static/css/main.92d841b4.css",
+    "main.js": "/dagobah-landing-page/static/js/main.ae52f51e.js",
+    "static/js/787.5519bb93.chunk.js": "/dagobah-landing-page/static/js/787.5519bb93.chunk.js",
+    "index.html": "/dagobah-landing-page/index.html",
+    "main.92d841b4.css.map": "/dagobah-landing-page/static/css/main.92d841b4.css.map",
+    "main.ae52f51e.js.map": "/dagobah-landing-page/static/js/main.ae52f51e.js.map",
+    "787.5519bb93.chunk.js.map": "/dagobah-landing-page/static/js/787.5519bb93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92d841b4.css",
+    "static/js/main.ae52f51e.js"
+  ]
+}
