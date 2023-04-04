@@ -31,7 +31,7 @@ export default function Header(props) {
                 
                 {navElements}
 
-                <a href="#" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight hover:translate-y-[-0.2rem]">Curriculum</a>
+                <a href="img/CV-alejandro.pdf" download="CV-alejandro.pdf" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight hover:translate-y-[-0.2rem]">Curriculum</a>
             </nav>
             <nav className="flex md:hidden z-10">
 
@@ -43,7 +43,7 @@ export default function Header(props) {
 
             <div className={`flex transition-all duration-200 ${props.toggle ? `translate-x-0` : 'translate-x-full' }  px-20 pt-10 bg-secondary fixed top-0 right-0 justify-center w-full h-screen z-0 flex-col`}>
                 {navElements}
-                <a href="#" className={`rounded-md bg-aleBlue py-2 mt-5 text-primary font-bold text-lg text-center tracking-customWide transition duration-150 hover:bg-aleBlueDarker md:hover:bg-aleBlueLight hover:translate-y-[-0.2rem]`}>Curriculum</a>
+                <a href="img/CV-alejandro.pdf" download="img/CV-alejandro.pdf" className={`rounded-md bg-aleBlue py-2 mt-5 text-primary font-bold text-lg text-center tracking-customWide transition duration-150 hover:bg-aleBlueDarker md:hover:bg-aleBlueLight hover:translate-y-[-0.2rem]`}>Curriculum</a>
 
             </div>
 
