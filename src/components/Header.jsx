@@ -2,7 +2,8 @@ import React from "react";
 
 import {navLinks} from "../constants/index"
 import { IconMenu2,  IconX} from "@tabler/icons";
-import styles from "../style";
+
+
 export default function Header(props) {
 
     var navElements = navLinks.map((item, index)=>{
@@ -23,8 +24,8 @@ export default function Header(props) {
 
     return(
         <div className="w-full flex justify-between items-center py-4 sm:pb-20 sm:pt-12 navbar">
-            <a href="">
-                <img src="img/aledevelops-logo.png" className="w-52 sm:w-[180px]"/>
+            <a href="#">
+                <img src="img/aledevelops-logo.png" className="w-52 sm:w-[180px]" alt="logo de aledevelops desarrollador web de Ecuador"/>
 
             </a>
             <nav className="hidden md:flex">

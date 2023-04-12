@@ -9,7 +9,7 @@ export default function Work() {
         
         let style
 
-        if(item.company == currentJob.company){
+        if(item.company === currentJob.company){
             style = "py-2 px-3 whitespace-nowrap text-md text-left font-bold font-crimsonPro w-full transition duration-150  bg-aleBlueLight text-aleBlue"
             
         }else{
@@ -25,7 +25,7 @@ export default function Work() {
     function changeInfo(company) {
 
         var indice = work.findIndex((job)=>{
-            return job.company == company
+            return job.company === company
         })
         console.log(work[indice]);
         setCurrentJob(work[indice])

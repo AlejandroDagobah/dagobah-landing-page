@@ -14,7 +14,6 @@ export default function Alevector(){
     var ears = document.getElementById('ears')
     var mouth = document.getElementById('mouth')
     var nose = document.getElementById('nose')
-    var browns = document.getElementById('browns')
     var brownL = document.getElementById('brownL')
     var brownR = document.getElementById('brownR')
     var eyes = document.getElementById('eyes')

@@ -60,9 +60,9 @@ export default function Website() {
                                     </div>
 
                                     <div className="mt-10 sm:mt-0 xs:w-full xs:px-20 ss:px-32 ss:mt-0 sm:px-8 sm:ml-12 sm:-mt-10 md:w-1/2 md:ml-0 md:px-0">
-                                        <img src={websiteCard.websiteImage} className={`${styles.websitesImg} -z-20 max-w-none -left-[30%] w-[140%] sm:absolute sm:left-[46%] sm:w-[48%] sm:top-[10%] lg:w-[47%] lg:top-[4%]`} data-atropos-offset="-7"/>
+                                        <img src={websiteCard.websiteImage}  alt={websiteCard.altImg}  className={`${styles.websitesImg} -z-20 max-w-none -left-[30%] w-[140%] sm:absolute sm:left-[46%] sm:w-[48%] sm:top-[10%] lg:w-[47%] lg:top-[4%]`} data-atropos-offset="-7"/>
 
-                                        <img src={websiteCard.phoneImage} className={`${styles.websitesImg} -z-10 -top-[40%] left-[57%] w-[70%] sm:absolute sm:left-[76%] sm:top-[36%] sm:w-[20%] lg:w-[22%] lg:top-[24%]`} data-atropos-offset="-5"/>
+                                        <img src={websiteCard.phoneImage} alt={websiteCard.altImg}  className={`${styles.websitesImg} -z-10 -top-[40%] left-[57%] w-[70%] sm:absolute sm:left-[76%] sm:top-[36%] sm:w-[20%] lg:w-[22%] lg:top-[24%]`} data-atropos-offset="-5"/>
                                     </div>
                                 </div>
 

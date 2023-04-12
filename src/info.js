@@ -1,4 +1,4 @@
-import {IconFolders, IconBrandGithub, IconLink, IconDeviceGamepad2, IconDeviceGamepad, IconAppWindow, IconMovie, IconLayoutCollage, IconPhoto, IconBox, IconPackage, IconChessKnight} from "@tabler/icons";
+import {IconBrandGithub, IconDeviceGamepad, IconAppWindow, IconChessKnight} from "@tabler/icons";
 
 
 const websites = [
@@ -8,6 +8,7 @@ const websites = [
         buttons: ['e-commerce', 'Web Design', 'Wordpress', 'SEO'],
         websiteImage: 'img/web-fdlv-img.png',
         phoneImage:'img/phone-fdlv-img.png',
+        altImg:"Página web Joyería Flor de la Vida",
         isRight:true,
         url: 'https://joyeriaflordelavida.com/'
     },
@@ -17,6 +18,7 @@ const websites = [
         buttons: ['Motion Graphics', 'Animation', 'Illustration'],
         websiteImage: 'img/campaing-one-life.png',
         phoneImage:'',
+        altImg:"Trabajo de Audiovisuales para Ministerio de la Salud",
         isRight:false,
         url: 'https://www.youtube.com/watch?v=PFLYHtWaaz0&list=PLWd8jJ5W_3iN3w-CuFJt-oFq0HG25V_5G&ab_channel=Aledevelops&themeRefresh=1'
 
@@ -28,6 +30,7 @@ const websites = [
         buttons: ['e-commerce', 'Web Design', 'Photo Retouch'],
         websiteImage: 'img/website-portfolio-fenix.png',
         phoneImage:'img/phone-portfolio-fenix.png',
+        altImg:"Página web Fenix Delivery",
         isRight:false,
         url: 'https://fenix.com.ec/'
 
@@ -38,6 +41,8 @@ const websites = [
         buttons: ['Game Development', 'Unity', 'Pixel Art'],
         websiteImage: 'img/dino-propulsion-web.png',
         phoneImage:'img/dino-propulsion.png',
+        altImg:"Videojuego Móvil Dino Propulsion",
+
         isRight:false,
         url:'https://alejandrodagobah.itch.io/dino-propulsion'
     },
@@ -47,6 +52,7 @@ const websites = [
         buttons: ['UI/UX Design', 'Web Development', 'Wordpress'],
         websiteImage: 'img/website-portfolio-quality-2.png',
         phoneImage:'img/phone-portfolio-quality-2.png',
+        altImg:"Página web Quality B2B",
         isRight:false,
         url:'https://qualityb2b.com/'
 
@@ -57,7 +63,10 @@ const websites = [
         buttons: ['e-commerce', 'Web Design'],
         websiteImage: 'img/natomovil.png',
         phoneImage:'img/natomovil-phone.png',
-        isRight:false
+        altImg:"Página web Natomovil",
+        isRight:false,
+        url:'https://natomovil.com.ec/'
+
 
     }
 ]

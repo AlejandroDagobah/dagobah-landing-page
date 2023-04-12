@@ -1,6 +1,6 @@
 import React from "react";
 
-import {IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconBrandDribbble, IconBrandWhatsapp, IconMail, IconStar, IconGitFork} from "@tabler/icons";
+import {IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconBrandDribbble, IconBrandWhatsapp, IconStar, IconGitFork} from "@tabler/icons";
 
 
 export default function FixedContact() {
@@ -14,32 +14,32 @@ export default function FixedContact() {
 
             <ul className={isMovil ? styleMovil : styleDesktop }>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://github.com/AlejandroDagobah" target="_blank">
+                    <a href="https://github.com/AlejandroDagobah" target="_noreferrer">
                         <IconBrandGithub size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://www.linkedin.com/in/alejandro-cevallos/" target="_blank">
+                    <a href="https://www.linkedin.com/in/alejandro-cevallos/" target="_noreferrer">
                         <IconBrandLinkedin size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://twitter.com/aledagobah" target="_blank">
+                    <a href="https://twitter.com/aledagobah" target="_noreferrer">
                         <IconBrandTwitter size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://www.instagram.com/ale_develops/" target="_blank">
+                    <a href="https://www.instagram.com/ale_develops/" target="_noreferrer">
                         <IconBrandInstagram size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://dribbble.com/Dagobah" target="_blank">
+                    <a href="https://dribbble.com/Dagobah" target="_noreferrer">
                         <IconBrandDribbble size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://wa.me/593962801800" target="_blank">
+                    <a href="https://wa.me/593962801800" target="_noreferrer">
                         <IconBrandWhatsapp size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>

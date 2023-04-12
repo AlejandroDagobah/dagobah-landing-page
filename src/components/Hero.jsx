@@ -3,7 +3,7 @@ import Alevector from "./Alevector";
 
 import styles from "../style";
 
-export default function Hero(props) {
+export default function Hero() {
 
 
     return(

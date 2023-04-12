@@ -16,9 +16,6 @@ import FixedContact from './components/FixedContact'
 function App() {
   
   const [toggleMenu, setToggleMenu] = React.useState(false);
-  const [coor, setCoor] = React.useState(0)
-
-
 
   return (
     <div className={`App`}>
@@ -34,7 +31,7 @@ function App() {
           
           <div className='justify-between'>
             <div className={`${styles.boxWidth, styles.boxPaddingX} my-14`}>
-              <Hero coor={coor}/>
+              <Hero/>
             </div>
           </div>
           

@@ -1,19 +1,9 @@
 import React from "react";
-import Atropos from "atropos/react";
-import styles from "../style"
 import {others} from "../info";
 import { motion, AnimatePresence } from "framer-motion"
 
-import {IconArrowBadgeLeft, IconBrandGithub, IconLink, IconArrowBadgeRight} from "@tabler/icons";
+import {IconArrowBadgeLeft, IconLink, IconArrowBadgeRight} from "@tabler/icons";
 
-const variants = {
-    hover: {
-        color: '#FF5A5F'
-    },
-    initial: {
-        color: '#0D1821'
-    }
-};
 
 export default function Other() {
 
@@ -56,7 +46,7 @@ export default function Other() {
                 })
         
                 let website = 
-                <a key={cardIndex} target="_blank" href={othersCard.prod != undefined ? othersCard.prod : othersCard.repo} >
+                <a key={cardIndex} target="_noreferrer" href={othersCard.prod !== undefined ? othersCard.prod : othersCard.repo} >
                         <AnimatePresence wait>
                         <motion.div
                                 
@@ -67,13 +57,13 @@ export default function Other() {
                             >
                             <div className="border-secondary border-2 p-3 h-[100%] flex flex-col justify-center align-middle bg-primary"> 
                                 <div className="flex flex-row  justify-end">
-                                    {othersCard.repo != undefined && 
+                                    {othersCard.repo !== undefined && 
                                         <a href={othersCard.repo} target="_blank">
                                             <othersCard.iconLink size={30} className="pb-2 transition duration-200 hover:text-aleRed"/>
                                         </a>
                                     }
                                     {
-                                    othersCard.prod != undefined && 
+                                    othersCard.prod !== undefined && 
                                         <a href={othersCard.prod} target="_blank">
                                             <IconLink size={30}  className="pb-2 transition duration-200 hover:text-aleRed"/>
                                         </a>
