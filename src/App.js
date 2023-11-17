@@ -30,7 +30,7 @@ function App() {
           </div>
           
           <div className='justify-between'>
-            <div className={`${styles.boxWidth, styles.boxPaddingX} my-14`}>
+            <div className={`${styles.boxWidth + styles.boxPaddingX} my-14`}>
               <Hero/>
             </div>
           </div>
