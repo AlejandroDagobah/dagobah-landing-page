@@ -15,27 +15,20 @@ import FixedContact from './components/FixedContact'
 
 function App() {
   
-  const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
     <div className={`App`}>
 
-      <div className={`content ${styles.paddingX}`}>
-        <div className={`${styles.flexStart}`}>
+      <div className={`content flex flex-col items-center`}>
 
-            <div className={`${styles.boxWidth}`}>
-              <Header toggle={toggleMenu} setToggle={setToggleMenu}/>
-            </div>
+          <Header/>
 
-          </div>
           
-          <div className='justify-between'>
-            <div className={`${styles.boxWidth + styles.boxPaddingX} my-14`}>
-              <Hero/>
-            </div>
+          <div className={`flex flex-row max-w-[1600px] lg:max-w-[1400px] sm:px-[5rem] md:px-[8rem] h-[95vh] mt-[3rem] justify-center`}>
+            <Hero/>
           </div>
-          
-          <div>
+        
+          <div className='flex-row'>
 
 
 
@@ -47,7 +40,7 @@ function App() {
               <Work/>
             </div>
 
-            <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>
+            <div className={`${styles.boxWidth} px-3 sm:px-0 lg:px-36 px-4`}>
               <Websites/>
             </div>
 
@@ -68,6 +61,6 @@ function App() {
       </div>
     </div>
   );
-}
+} 
 
 export default App;

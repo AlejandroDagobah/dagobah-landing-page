@@ -70,6 +70,93 @@ const websites = [
 
     }
 ]
+
+const projects = [
+    {
+        title: "Desarrollo Web",
+        projects: [
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 1",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodUrl: "#"
+            }
+        ]
+    },
+    {
+        title: "Web Design",
+        projects: [
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 1",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodUrl: "#"
+            }
+        ]
+    },    
+    {
+        title: "Game Development",
+        projects: [
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 1",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodUrl: "#"
+            }
+        ]
+    },
+    {
+        title: "Optimización para Motores de Busqueda (SEO)",
+        projects: [
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 1",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodUrl: "#"
+            }
+        ]
+    },
+    {
+        title: "Diseño Gráfico",
+        projects: [
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 1",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodUrl: "#"
+            }
+        ]
+    },
+    {
+        title: "Edicion de Video / Motion Graphics",
+        projects: [
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 1",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodUrl: "#"
+            }
+        ]
+    },  
+]
     
 
 const work = [
@@ -171,4 +258,4 @@ const others = [
     }
 ]
 
-export {websites, work, others}
+export {websites, work, others, projects}
