@@ -124,6 +124,7 @@ html {
 
 ::-webkit-scrollbar{
   width: 12px;
+  height: 12px;
 }
 
 /* Track */
@@ -135,8 +136,8 @@ html {
 ::-webkit-scrollbar-thumb {
   border-radius: 30px;
   margin-right: 9px;
-  box-shadow: inset 0 0 10px 10px #001721;
-    border: solid 3px transparent;
+  box-shadow: inset 0 0 10px 10px #8f8f8f;
+    border: solid 4px transparent;
 
 }
 
@@ -145,13 +146,16 @@ html {
     @apply py-4 sm:py-8;
   } 
   
-  
   .dropMenuOnUp{
     @apply bg-primary/60 backdrop-blur-md drop-shadow-md py-4 sm:py-6 -translate-y-[85px];
   }
 
   .dropMenuOnDown{
     @apply bg-primary/60 backdrop-blur-md drop-shadow-md py-4 sm:py-6 translate-y-0;
+  }
+
+  .itemsScroll{
+    width: calc(100% + 50px);
   }
 
 

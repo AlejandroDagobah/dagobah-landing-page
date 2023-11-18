@@ -5,7 +5,7 @@ import {websites} from "../info";
 import {projects} from "../info";
 import { motion, AnimatePresence } from "framer-motion"
 
-import {IconArrowBadgeLeft, IconArrowBadgeRight} from "@tabler/icons";
+import {IconBrandGithub, IconExternalLink} from "@tabler/icons";
 
 
 export default function Website() {
@@ -85,19 +85,18 @@ export default function Website() {
         let style
 
         if(item.title === currentProject.title){
-            style = "text-aleBlue"
+            style = "text-aleBlue border-aleBlue"
             
         }else{
-            style = " text-secondary"
+            style = "text-secondary"
 
         }
 
-        return <button key={projects.indexOf(item)} onClick={()=>changeInfo(item.title)} className={`border-l-2 border-secondary/30 py-2 px-3 whitespace-nowrap text-md text-left font-bold font-crimsonPro w-full transition duration-150 hover:bg-aleBlue/10 hover:text-aleBlue ${style}`}>
+        return <button key={projects.indexOf(item)} onClick={()=>changeInfo(item.title)} className={`border-t-2 mb-px sm:border-t-0 sm:border-l-2 border-secondary/30 py-2 sm:mb-0 px-3 whitespace-nowrap text-md text-left font-bold font-crimsonPro transition duration-150 hover:bg-aleBlue/10 hover:text-aleBlue hover:border-aleBlue ${style}`}>
                 {item.title}
             </button>
     })
 
-    
 
     function changeInfo(title) {
 
@@ -111,29 +110,35 @@ export default function Website() {
         navTab.style.transform = `translate(0, ${indice * 40}px)`        
     }
 
-    
-
     return(
         <div id="projects" className="my-28">
             <div className="flex items-center">
                 <h2 className="flex items-center whitespace-nowrap w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleBlue">02.</span>Trabajo Destacado</h2>
                 
             </div>
-            <div className="flex flex-row py-12">
-                <div className="flex-col basis-full mb-6 sm:basis-1/4 pr-4">
-                    <div id="navTabProj" className="tab absolute w-[2px] h-[40px] bg-aleBlue rounded-lg transition-all ease-in-out duration-150 delay-200 translate-y-0"></div>
+            
+            <div className="flex flex-col py-12 md:flex-row md:justify-between">
+                <div className="flex absolute left-px sm:left-0 sm:relative max-w-[100%] overflow-x-auto sm:overflow-x-hidden sm:flex-col sm:max-w-[250px]">
+                    <div id="navTabProj" className={`absolute hidden sm:block sm:w-[2px] sm:h-[40px] bg-aleBlue rounded-lg transition-all ease-in-out duration-150 delay-200 translate-y-0`}></div>
                     {buttons}
                 </div>
 
-                <div>
-                    <div>
-                        <span></span>
-                        <h3></h3>
-                        <p></p>
-                        <div>
-                            <p></p>
+                <div className="">
+                    <div className="flex flex-col bg-projectSample md:bg-none bg-cover backdrop-blur-sm justify-end border-secondary border-2 md:border-0 p-4 w-full min-h-[300px]">
+                        <img className="" src="../public/img/project-sample-img.jpg" alt="" />
+                        <span className="font-crimsonPro text-md text-aleBlue">Proyecto Destacado</span>
+                        <h3 className="font-crimsonPro text-xl mb-2">Trigonometry Visualizer.</h3>
+                        <p className="text-xs">Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto.</p>
+                        <div className="flex gap-3 mt-2">
+                            <p className="font-sourceCodePro text-sm">HTML</p>
+                            <p className="font-sourceCodePro text-sm">CSS</p>
+                            <p className="font-sourceCodePro text-sm">JAVASCRIPT</p>
                         </div>
-                        
+                        <div className="flex gap-3 mt-3">
+                            <IconBrandGithub size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
+                            <IconExternalLink size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
+
+                        </div>
                     </div>
                 </div>
 

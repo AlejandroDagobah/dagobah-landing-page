@@ -104,7 +104,7 @@ const projects = [
         title: "Game Development",
         projects: [
             {
-                img: "img/project-sample-img.jpg",
+                img: "bg-projectSample",
                 title: "Project 1",
                 subtitle: "Proyecto Destacado",
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",

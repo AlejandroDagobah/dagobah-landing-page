@@ -23,6 +23,9 @@ module.exports = {
       },
       letterSpacing: {
         customWide: '.1em',  
+      },
+      backgroundImage: {
+        'projectSample': "url('../public/img/project-sample-img.jpg')",
       }
     },
     screens: {

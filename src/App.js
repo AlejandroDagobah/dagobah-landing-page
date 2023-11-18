@@ -23,37 +23,39 @@ function App() {
 
           <Header/>
 
+          <div className=''>
+            <div className={`flex flex-row max-w-[1600px] lg:max-w-[1400px]  sm:px-[5rem] md:px-[8rem] h-[95vh] mt-[3rem] justify-center`}>
+              <Hero/>
+            </div>
           
-          <div className={`flex flex-row max-w-[1600px] lg:max-w-[1400px] sm:px-[5rem] md:px-[8rem] h-[95vh] mt-[3rem] justify-center`}>
-            <Hero/>
+            <div className='flex-row'>
+
+
+
+              <div className={`${styles.boxWidth} my-12 px-3 sm:pl-10 sm:pr-4 lg:px-36`}>
+                <About/>
+              </div>
+  
+              <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
+                <Work/>
+              </div>
+
+              <div className={`${styles.boxWidth} px-4 sm:px-10 lg:px-36`}>
+                <Websites/>
+              </div>
+
+              {/* <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
+                <Others/>
+              </div>
+
+              <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>       
+                <Contact/>
+              </div>
+              */}
+
+            </div>
           </div>
-        
-          <div className='flex-row'>
-
-
-
-            <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 lg:px-36 px-4`}>
-              <About/>
-            </div>
-
-            <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
-              <Work/>
-            </div>
-
-            <div className={`${styles.boxWidth} px-3 sm:px-0 lg:px-36 px-4`}>
-              <Websites/>
-            </div>
-
-            <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
-              <Others/>
-            </div>
-
-            <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>       
-              <Contact/>
-            </div>
-            
-
-          </div>
+     
       </div>
 
       <div>
