@@ -11,7 +11,22 @@ import styles from './style';
 import FixedContact from './components/FixedContact'
 
 
+import { motion, Variants } from "framer-motion"
 
+const cardVariants = {
+  offscreen: {
+    y: 100,
+    opacity: 0
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      duration: 0.8
+    }
+  }
+}
 
 function App() {
   
@@ -23,44 +38,61 @@ function App() {
 
           <Header/>
 
-          <div className=''>
             <div className={`flex flex-row max-w-[1600px] lg:max-w-[1400px]  sm:px-[5rem] md:px-[8rem] h-[95vh] mt-[3rem] justify-center`}>
               <Hero/>
             </div>
-          
-            <div className='flex-row'>
 
+            <motion.div
+                initial= {cardVariants.offscreen}
+                whileInView={cardVariants.onscreen}
+                viewport={{ once: true, amount: 0.5 }}
+            className={`${styles.boxWidth} my-12 px-3 sm:pl-10 sm:pr-4 lg:px-36`}>
+              <About/>
+            </motion.div>
 
+            <motion.div 
+              initial= {cardVariants.offscreen}
+              whileInView={cardVariants.onscreen}
+              viewport={{ once: true, amount: 0.5 }}
+            className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
+              <Work/>
+            </motion.div>
 
-              <div className={`${styles.boxWidth} my-12 px-3 sm:pl-10 sm:pr-4 lg:px-36`}>
-                <About/>
-              </div>
-  
-              <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
-                <Work/>
-              </div>
+            <motion.div 
+                initial= {cardVariants.offscreen}
+                whileInView={cardVariants.onscreen}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.boxWidth} px-4 sm:px-10 lg:px-36`}>
+              <Websites/>
+            </motion.div>
 
-              <div className={`${styles.boxWidth} px-4 sm:px-10 lg:px-36`}>
-                <Websites/>
-              </div>
+            <motion.div 
+              initial= {cardVariants.offscreen}
+              whileInView={cardVariants.onscreen}
+              viewport={{ once: true, amount: 0.5 }}
+              className={`max-w-[1000px] sm:pl-10 sm:pr-4 px-3`}>
+              <Others/>
+            </motion.div>
 
-              {/* <div className={`${styles.boxWidth} my-44 sm:pl-10 sm:pr-4 px-3 md:px-36 lg:px-80`}>
-                <Others/>
-              </div>
+            <motion.div 
+              initial= {cardVariants.offscreen}
+              whileInView={cardVariants.onscreen}
+              viewport={{ once: true, amount: 0.5 }}
+              className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>       
+              <Contact/>
+            </motion.div>
+            
 
-              <div className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>       
-                <Contact/>
-              </div>
-              */}
-
-            </div>
-          </div>
      
       </div>
 
-      <div>
+      <motion.div
+          transition={{type: 'spring', delay:2}}
+          initial={{opacity: 0 }}
+          animate={{opacity: 1 }}
+      >
         <FixedContact/>
-      </div>
+      </motion.div>
     </div>
   );
 } 

@@ -2,6 +2,7 @@ import React from "react";
 
 import {navLinks} from "../constants/index"
 import { IconMenu2,  IconX} from "@tabler/icons";
+import { motion, AnimatePresence } from "framer-motion"
 
 
 export default function Header() {
@@ -21,7 +22,7 @@ export default function Header() {
     
         if(currentScroll > lastScroll){
             setScrollState(1)
-        }else if(currentScroll == 0){
+        }else if(currentScroll <= 20){
             setScrollState(0)
         }else if(currentScroll < lastScroll){
             setScrollState(2)
@@ -58,8 +59,12 @@ export default function Header() {
 
     var navElements = navLinks.map((item, index)=>{
 
-        return <a key={index} href={item.link} onClick={() => setToggleMenu(false)} className={`mb-16 text-primary text-lg flex font-sourceCodePro md:items-center md:justify-center md:px-2 md:text-secondary md:mb-0 md:text-sm md:p-2 transition duration-150 hover:bg-secondaryDarker md:hover:bg-aleRedLight hover:translate-y-[-0.2rem]`}><span className="number text-aleRed pr-2 md:pr-2">0.{index + 1}</span> {item.title}</a>
-
+        return <motion.div 
+                    transition={{type: 'spring', delay:0.1*index}}
+                    initial={{ y: -20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                >
+                    <a key={index} href={item.link} onClick={() => setToggleMenu(false)} className={`mb-16 text-primary text-lg flex font-sourceCodePro md:items-center md:justify-center md:px-2 md:text-secondary md:mb-0 md:text-sm md:p-2 transition duration-150 hover:bg-secondaryDarker md:hover:bg-aleRedLight hover:translate-y-[-0.2rem]`}><span className="number text-aleRed pr-2 md:pr-2">0.{index + 1}</span> {item.title}</a></motion.div>    
     })
 
     React.useEffect(()=>{
@@ -75,15 +80,30 @@ export default function Header() {
     return(
         <div className={`fixed top-0 start-0 z-50 flex justify-between w-full px-[1rem] sm:px-[5rem] dropMenuOff transition-all ease-in-out ${scrollClassName}`}>
             <div className="w-full flex justify-between items-center navbar">
-                <a href="#">
-                    <img src="img/aledevelops-logo.png" className="w-52 sm:w-[180px]" alt="logo de aledevelops desarrollador web de Ecuador"/>
+                <motion.div
+                    initial={{opacity:0}}
+                    animate={{opacity:1}}
+                    transition={{type: "spring", duration:1}}
 
-                </a>
+                >
+                    <a href="#">
+                        <img src="img/aledevelops-logo.png" className="w-52 sm:w-[180px]" alt="logo de aledevelops desarrollador web de Ecuador"/>
+                    </a>
+                </motion.div>
                 <nav className="hidden md:flex">
                     
                     {navElements}
 
-                    <a href="img/CV-alejandro.pdf" download="CV-alejandro.pdf" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight hover:translate-y-[-0.2rem]">Curriculum</a>
+                    <motion.div
+                        transition={{type: 'spring', delay:0.7}}
+                        initial={{ y: -20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        onHoverStart={{y: -10}}
+                    >
+                        <a href="img/CV-alejandro.pdf" download="CV-alejandro.pdf" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight">Curriculum</a>
+                    
+                    </motion.div>
+
                 </nav>
 
                 <nav className="flex md:hidden z-10">

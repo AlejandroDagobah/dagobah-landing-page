@@ -82,7 +82,25 @@ const projects = [
                 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
                 tags: ["HTML", "CSS", "JAVASCRIPT"],
                 repoURL: "#",
-                prodUrl: "#"
+                prodURL: "#"
+            },
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 2",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodURL: "#"
+            },
+            {
+                img: "img/project-sample-img.jpg",
+                title: "Project 3",
+                subtitle: "Proyecto Destacado",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                repoURL: "#",
+                prodURL: "#"
             }
         ]
     },
