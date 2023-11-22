@@ -13,7 +13,8 @@ module.exports = {
         aleBlueDarker: "#135763",
         aleRed: "#FF5A5F",
         aleRedLight : "#FFCFD0",
-        aleBlueLight : "#DAEEF1"
+        aleBlueLight : "#DAEEF1",
+        aleBlueSky : "#98DBE5"
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

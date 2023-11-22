@@ -76,31 +76,29 @@ const projects = [
         title: "Desarrollo Web",
         projects: [
             {
-                img: "img/project-sample-img.jpg",
-                title: "Project 1",
+                img: "./img/projects/trigonometry.png",
+                title: "VisualTrig",
                 subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
-                repoURL: "#",
-                prodURL: "#"
+                description: "Realice los recursos, animación y montaje de tres comerciales con estilo Pixel Art, en conjunto con la consultora de comunicación “Farola” para el Ministerio de la Salud con el fin de educar y promover la conciencia frente al Covid-19, VIH y la VBG (Violencia Basada en Género).",
+                tags: ["GATSBY.JS", "REACT", "TAILWIND", "JAVASCRIPT", "MATH"],
+                repoURL: "https://github.com/AlejandroDagobah/trigonofiesta-dagobah"
             },
             {
-                img: "img/project-sample-img.jpg",
-                title: "Project 2",
+                img: "./img/projects/chessToNotion.png",
+                title: "Chess To Notion",
                 subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
-                repoURL: "#",
-                prodURL: "#"
+                description: "Registra tus partidas de Chess.com a Notion, guarda la repericion las derrotas y victorias tiempos y más, útil para registrar vicorias de participantes en clubs.",
+                tags: ["REACT", "TAILWIND", "NODE.JS"],
+                repoURL: "https://github.com/AlejandroDagobah/chess-to-notion"
             },
             {
-                img: "img/project-sample-img.jpg",
-                title: "Project 3",
+                img: "./img/innova-1.jpg",
+                title: "Innova Egroup Website",
                 subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
-                repoURL: "#",
-                prodURL: "#"
+                description: "Diseño, desarrollo y optimización de un sitio web para una constructora ecologíca centrada en la construcción de conjuntos y edificios residenciales con materiales y ladrillos ecológicos",
+                tags: ["GATSBY.JS", "TAILWIND", "JAVASCRIPT"],
+                repoURL: "https://github.com/AlejandroDagobah/innova-website-gatsby",
+                prodURL: "https://innova-egroup.com.ec/"
             }
         ]
     },
@@ -108,13 +106,29 @@ const projects = [
         title: "Web Design",
         projects: [
             {
-                img: "img/project-sample-img.jpg",
-                title: "Project 1",
+                img: "./img/quality-1.jpg",
+                title: "Sitio Web Quality B2B",
                 subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
+                description: "Sitio web que diseñé y desarrollé para Quality B2B enfocada en presentar la marca y los productos como la solución ambiental a productos de limpieza para negocios, organizaciones y grandes fábricas.",
+                tags: ['UI/UX Design', 'Web Development', 'Wordpress'],
+                prodURL: "https://joyeriaflordelavida.com/"
+            },
+            {
+                img: "./img/fdlv.jpg",
+                title: "E-Commerce Joyería Flor de la Vida",
+                subtitle: "Proyecto Destacado",
+                description: "ealice el diseño UI/UX y desarrolle en Wordpress esta \r\n e-commerce para la empresa “Joyería Flor de la Vida”. Además optimice el SEO para alcanzar los primeros puestos en las búsquedas relacionadas.",
+                tags: ['e-commerce', 'Web Development', 'Wordpress', 'SEO'],
+                prodURL: "https://joyeriaflordelavida.com/"
+            },
+            {
+                img: "./img/publimachine.jpg",
+                title: "E-Commerce Publimachine",
+                subtitle: "Proyecto Destacado",
+                description: "Sitio web que diseñé y desarrollé para una e-commerce de servicios de diseño gráfico",
+                tags: ['e-commerce', 'UI/UX Design', 'Web Development', 'Wordpress'],
                 repoURL: "#",
-                prodUrl: "#"
+                prodURL: "#"
             }
         ]
     },    
@@ -122,55 +136,61 @@ const projects = [
         title: "Game Development",
         projects: [
             {
-                img: "bg-projectSample",
-                title: "Project 1",
+                img: "./img/dino-propulsion-web2.jpg",
+                title: "Dino propulsion",
                 subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
-                repoURL: "#",
-                prodUrl: "#"
+                description: "Un pequeño juego inspirado en Flappy Bird en el que eres un dinosaurio que intenta volar por el cielo, por el momento se encuentra en Itch.io.",
+                tags: ['Game Development', 'Unity', 'Pixel Art'],
+                prodURL: "https://alejandrodagobah.itch.io/dino-propulsion"
             }
         ]
     },
-    {
-        title: "Optimización para Motores de Busqueda (SEO)",
-        projects: [
-            {
-                img: "img/project-sample-img.jpg",
-                title: "Project 1",
-                subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
-                repoURL: "#",
-                prodUrl: "#"
-            }
-        ]
-    },
-    {
-        title: "Diseño Gráfico",
-        projects: [
-            {
-                img: "img/project-sample-img.jpg",
-                title: "Project 1",
-                subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
-                repoURL: "#",
-                prodUrl: "#"
-            }
-        ]
-    },
+    // {
+    //     title: "Optimización para Motores de Busqueda (SEO)",
+    //     projects: [
+    //         {
+    //             img: "./img/project-sample-img.jpg",
+    //             title: "Project 1",
+    //             subtitle: "Proyecto Destacado",
+    //             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+    //             tags: ["HTML", "CSS", "JAVASCRIPT"],
+    //             repoURL: "#",
+    //             prodURL: "#"
+    //         }
+    //     ]
+    // },
+    // {
+    //     title: "Diseño Gráfico",
+    //     projects: [
+    //         {
+    //             img: "./img/project-sample-img.jpg",
+    //             title: "Project 1",
+    //             subtitle: "Proyecto Destacado",
+    //             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
+    //             tags: ["HTML", "CSS", "JAVASCRIPT"],
+    //             repoURL: "#",
+    //             prodURL: "#"
+    //         }
+    //     ]
+    // },
     {
         title: "Edicion de Video / Motion Graphics",
         projects: [
             {
-                img: "img/project-sample-img.jpg",
-                title: "Project 1",
+                img: "./img/covid.jpg",
+                title: "Solo tienes una Vida",
                 subtitle: "Proyecto Destacado",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi.",
-                tags: ["HTML", "CSS", "JAVASCRIPT"],
-                repoURL: "#",
-                prodUrl: "#"
+                description: "Realice los recursos, animación y montaje de tres comerciales con estilo Pixel Art, en conjunto con la consultora de comunicación “Farola” para el Ministerio de la Salud con el fin de educar y promover la conciencia frente al Covid-19, VIH y la VBG (Violencia Basada en Género).",
+                tags: ["Adobe Suite", "Motion Graphics", "Pixel Art"],
+                prodURL: "https://www.youtube.com/watch?v=PFLYHtWaaz0&list=PLWd8jJ5W_3iN3w-CuFJt-oFq0HG25V_5G&ab_channel=Aledevelops"
+            },
+            {
+                img: "./img/videos-joyeria.jpg",
+                title: "Canal de YT Joyería Flor de la Vida",
+                subtitle: "Proyecto Destacado",
+                description: "Fui el editor de video del canal de la joyería Flor de la Vida hasta la fecha 01/06/2023",
+                tags: ["Adobe Premiere", "Adobe After Effects", "Edición de Video"],
+                prodURL: "https://www.youtube.com/@joyeriaflordelavida8318/videos"
             }
         ]
     },  

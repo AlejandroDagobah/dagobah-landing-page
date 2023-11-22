@@ -3,16 +3,34 @@ import Atropos from "atropos/react";
 import styles from "../style"
 import {websites} from "../info";
 import {projects} from "../info";
-import { motion, AnimatePresence } from "framer-motion"
-
+import { motion, Variants, AnimatePresence } from "framer-motion"
 import {IconBrandGithub, IconExternalLink} from "@tabler/icons";
 
+export const variants = {
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      }
+    },
+    hide: {
+      y: 100,
+      opacity: 0,
+        transition: {
+            type: "spring",
+            duration: 0.3,
+        }
 
+    }
+  };
+  
 export default function Website() {
 
-    const [currentProjNum, setCurrentProjNum] = React.useState({first:0, end:2})
     
     const [currentProject, setCurrentProject] = React.useState(projects[0])
+    const [currentProjNum, setCurrentProjNum] = React.useState(0)
     
 
     const buttons = projects.map((item)=>{
@@ -32,6 +50,10 @@ export default function Website() {
             </button>
     })
 
+    function turnOn(params) {
+        
+    }
+
     const projectsItems = currentProject.projects.map((item, i)=>{
 
         const tags = item.tags.map((tag)=>{
@@ -43,7 +65,18 @@ export default function Website() {
         const isOddNum = division == 1 ? true : false
         const styleOpposite = 'sm:flex-row-reverse'
         
-        return <div className={`relative flex flex-col justify-end border-secondary border-2 w-full min-h-[300px] mb-8 sm:mb-28 sm:flex-row sm:justify-center sm:border-0 ${isOddNum ? styleOpposite : ''}`}>
+        return <motion.a 
+                    initial='hide'
+                    whileInView='show'
+                    viewport={{ once: true, amount: 0.3 }}
+                    variants={variants}
+                    href={item.prodURL ? item.prodURL : item.repoURL}
+                    whileHover={{padding:'0px 20px'}}
+                    whileTap={{padding:'0px 20px'}}
+                    target="_blank"
+
+                    className={`group relative flex flex-col justify-end border-secondary border-2 w-full min-h-[300px] mb-8 sm:mb-28 sm:flex-row sm:justify-center sm:border-0 ${isOddNum ? styleOpposite : ''}`}>
+                    
                     <div className={`flex flex-1 flex-col justify-center z-10 px-6 py-8 sm:px-0  ${isOddNum ? 'sm:items-end' : 'sm:-mr-20'}`}>
                         <span className="font-crimsonPro text-xl text-aleBlue">{item.subtitle}</span>
                         <h3 className="font-crimsonPro text-3xl mb-4 break-normal">{item.title}</h3>
@@ -56,15 +89,15 @@ export default function Website() {
                         </div>
 
                         <div className="flex gap-3 mt-3">
-                            <a href={item.repoURL}><IconBrandGithub size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>
-                            <a href={item.prodURL}><IconExternalLink size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>
+                            {item.repoURL && <a href={item.repoURL} target="_blank"><IconBrandGithub size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
+                            {item.prodURL && <a href={item.prodURL} target="_blank"><IconExternalLink size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
                         </div>
                     </div>
-                    <div className={`absolute t-0 h-full w-full sm:w-auto sm:h-auto sm:static sm:flex-1 ${isOddNum ? 'sm:-mr-20' : ''}`}>
-                        <img className="h-full w-full object-cover backdrop-blur-md opacity-40 sm:backdrop-blur-none sm:opacity-100" src="./img/project-sample-img.jpg" alt="" />
+                    <div className={`rounded-lg absolute t-0 h-full w-full sm:w-auto sm:h-auto sm:static sm:flex-1 bg-aleBlueSky transition-all duration-150 group-hover:bg-primary ${isOddNum ? 'sm:-mr-20' : ''}`}>
+                        <img className="rounded-lg mix-blend-multiply transition-all duration-200  group-hover:backdrop-blur-none h-full w-full object-cover backdrop-blur-lg opacity-40 sm:backdrop-blur-none sm:opacity-100" src={item.img} alt="" />
                     </div>
 
-                </div>
+                </motion.a>
 
     })
 
@@ -76,6 +109,7 @@ export default function Website() {
         })
         
         setCurrentProject(projects[indice])
+        setCurrentProjNum(indice)
         var navTab = document.getElementById('navTabProjWeb')
 
     }
@@ -83,19 +117,27 @@ export default function Website() {
     return(
         <div id="projects" className="mt-28">
             <div className="flex items-center">
-                <h2 className="flex items-center whitespace-nowrap w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleBlue">02.</span>Trabajo Destacado</h2>
+                <h2 className="flex items-center whitespace-nowrap w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleBlue">02.</span>Proyectos Destacados</h2>
                 
             </div>
             
             <div className="flex flex-col py-12 sm:flex-row sm:justify-between">
-                <div className="flex absolute left-px sm:left-0 sm:relative max-w-[100%] overflow-x-auto sm:overflow-x-hidden sm:flex-col sm:max-w-[150px]">
+                <div className="flex absolute left-px sm:left-0 sm:relative max-w-[100%] overflow-x-auto sm:overflow-x-hidden sm:flex-col sm:w-[450px]">
                     {buttons}
                 </div>
 
-                <div className="mt-28 sm:mt-0 sm:pl-16">
+                <motion.div 
+                    key={currentProjNum}
+                    variants={variants}                        
+                    animate={"show"}
+                    initial="hide"
+                    exit="hide"
+                                            
+                    className="mt-28 sm:mt-0 sm:pl-16"
+                >
                     {projectsItems}
                    
-                </div>
+                </motion.div>
 
             </div>
         

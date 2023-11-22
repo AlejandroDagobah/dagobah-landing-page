@@ -35,13 +35,33 @@ export default function Other() {
         })
     }
 
+    function turnRed(e){
+        var element = e.srcElement
+        var icon = element.getElementsByClassName('iconCard')[0]
+        var title = element.getElementsByClassName('titleCard')[0]
+
+        icon.style.color = '#2592A4'
+        title.style.color = '#2592A4'
+        
+    }
+    function turnOffRed(e){
+        var element = e.srcElement
+        var icon = element.getElementsByClassName('iconCard')[0]
+        var title = element.getElementsByClassName('titleCard')[0]
+
+        icon.style.color = '#0D1821'
+        title.style.color = '#0D1821'
+        
+    }
+
+
     React.useEffect(()=>{
 
         setWebsitesCards(()=>{
             return currentOthers.map((othersCard, cardIndex) =>{
     
                 let tags = othersCard.tags.map((item, index) =>{
-                    return <span key={index} className="font-sourceCodePro text-xs pr-4">{item}</span>
+                    return <span key={index} className="font-sourceCodePro text-xs pr-4 text-aleBlue/60">{item}</span>
         
                 })
         
@@ -52,28 +72,36 @@ export default function Other() {
                                         whileHover={{ y: -10 }}
                                         whileTap={{ y: -10 }}
                                         transition={{ duration: 0.1}}
-                                        className="aspect-square flex flex-col w-full h-full border-secondary border-2 p-3 justify-center align-middle bg-primary text-end items-end justify-end"
-
+                                        className="aspect-square flex flex-col w-full h-full border-secondary border-2 p-8 justify-center bg-primary text-start items-start justify-between transition-all duration-100 hover:drop-shadow-lg"
+                                        onHoverStart={(e)=>{turnRed(e)}}
+                                        onHoverEnd={(e)=>{turnOffRed(e)}}
                                     >
-                                        <div className="flex flex-row justify-end">
-                                            {othersCard.repo !== undefined && 
-                                                <a href={othersCard.repo} target="_blank">
-                                                    <othersCard.iconLink size={30} className="pb-2 transition duration-200 hover:text-aleRed"/>
-                                                </a>
-                                            }
+                                        <div>
+                                            <div className="flex flex-row justify-between w-full mb-3">
                                             {
-                                            othersCard.prod !== undefined && 
-                                                <a href={othersCard.prod} target="_blank">
-                                                    <IconLink size={30}  className="pb-2 transition duration-200 hover:text-aleRed"/>
-                                                </a>
-                                            }
+                                                <othersCard.icon size={65} stroke={1.5} className="iconCard -ml-[6px] transition-all duration-300 text-secondary"/>}
+                                                <div className="flex flex-row">
+                                                    {othersCard.repo !== undefined && 
+                                                        <a href={othersCard.repo} target="_blank">
+                                                            <othersCard.iconLink size={30} className="pb-2 transition duration-200 text-secondary hover:text-aleRed"/>
+                                                        </a>
+                                                    }
+                                                    {
+                                                    othersCard.prod !== undefined && 
+                                                        <a href={othersCard.prod} target="_blank">
+                                                            <IconLink size={30}  className="pb-2 transition duration-200 hover:text-aleRed"/>
+                                                        </a>
+                                                    }
 
+                                                </div>
+                                            
+                                            </div>
+                                            <div>
+                                                <h3 className="titleCard">{othersCard.title}</h3>
+                                                <p className="text-[12px] mt-px">{othersCard.description}</p>
+                                            </div>
                                         </div>
-
-                                        {<othersCard.icon size={50} className="pb-2 transition duration-200 text-secondary"/>}
-                                        <h3 className="">{othersCard.title}</h3>
-                                        <p className="text-[12px] mt-3">{othersCard.description}</p>
-                                        <div className="relative my-4">
+                                        <div>
                                             {tags}
                                         </div>
                                     </motion.div>
@@ -91,7 +119,7 @@ export default function Other() {
     return(
         <div id="others" className="my-28">
             <div className="flex items-center ">
-                <h2 className="flex items-center w-full leading-6 sm:whitespace-nowrap after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleRed">04.</span>Otros Proyectos</h2>
+                <h2 className="flex items-center w-full leading-6 sm:whitespace-nowrap after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleBlue">04.</span>Otros Proyectos</h2>
                 
                 <div className="mt-2">
                     <IconArrowBadgeLeft size={30} onClick={()=>setWebsites(-1)} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>

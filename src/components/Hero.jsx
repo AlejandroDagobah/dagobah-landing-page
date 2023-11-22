@@ -20,20 +20,20 @@ export default function Hero() {
                 </motion.p>
 
                 <motion.h1 transition={{type: 'tween', delay:1.2}} initial={{ y: -5, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
-                className="font-crimsonPro font-bold text-center sm:text-start">
-                    <span className="text-7xl" id="ale">Alejandro.</span>
+                className="font-crimsonPro font-bold text-center sm:text-start  mt-2">
+                    <span className="text-7xl leading-[0.6]" id="ale">Alejandro Cevallos.</span>
 
                     <br></br>
-                    <span className="text-aleRed text-3xl sm:text-4xl md:text-7xl">Y desarrollo proyectos digitales.</span>
+                    <span className="text-aleRed text-3xl sm:text-4xl lg:text-7xl">Y desarrollo proyectos digitales.</span>
                 </motion.h1>
 
                 <motion.a transition={{type: 'tween', delay:1.4}} initial={{ y: -5, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
                 
-                href="https://wa.me/593962801800" className={`${styles.blueButton}`}>¡Hablemos!</motion.a>
+                href="#projects" className={`${styles.blueButton}`}>Ver Portafolio</motion.a>
             
             </div>
             <motion.div transition={{type: 'spring', delay:1.2}} initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
-            className="flex justify-end items-center sm:justify-end mb-4 sm:mb-0 px-[2rem] sm:px-[0rem] max-w-[400px]">
+            className="flex justify-end items-center self-center sm:self-auto sm:justify-end mb-4 sm:mb-0 px-[2rem] sm:px-[0rem] max-w-[400px]">
                 <Alevector/>
             </motion.div>
         </div>

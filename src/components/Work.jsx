@@ -1,10 +1,35 @@
 import React from "react";
 import {work} from "../info";
 
+import { motion, Variants, AnimatePresence } from "framer-motion"
+
+
+export const variants = {
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        duration: 0.5,
+      }
+    },
+    hide: {
+      y: 100,
+      opacity: 0,
+        transition: {
+            type: "spring",
+            duration: 0.2,
+        }
+
+    }
+  };
+  
+
+
 export default function Work() {
 
     const [currentJob, setCurrentJob] = React.useState(work[0])
-
+    const [indexJob, setIndexJob] = React.useState(0)
     const buttons = work.map((item)=>{
         
         let style
@@ -22,7 +47,6 @@ export default function Work() {
             </button>
     })
 
-    
 
     function changeInfo(company) {
 
@@ -31,6 +55,7 @@ export default function Work() {
         })
         
         setCurrentJob(work[indice])
+        setIndexJob(indice)
         var navTab = document.getElementById('navTab')
         navTab.style.transform = `translate(0, ${indice * 40}px)`        
     }
@@ -45,19 +70,27 @@ export default function Work() {
                     <div id="navTab" className={`absolute hidden sm:block sm:w-[2px] sm:h-[40px] bg-aleRed rounded-lg transition-all ease-in-out duration-150 delay-200 translate-y-0`}></div>
                     {buttons}
                 </div>
+                    <motion.div
+                        key={indexJob}
+                        variants={variants}                        
+                        animate={"show"}
+                        initial="hide"
+                        exit="hide"
+                        
+                        className="flex-col basis-full sm:basis-3/4 pl-4 pt-24 sm:pt-0"
+                    >
+                        
+                        <h3 className="">{`${currentJob.charge} en `} <a className="text-aleRed" href={currentJob.url && currentJob.url}>{currentJob.company}</a></h3>
+                        <p className="range py-4 font-sourceCodePro text-sm">{currentJob.date}</p>
+                     
+                        <ul className="pl-4 marker:text-aleRed marker:text-lg list-outside list-disc">
+                            {currentJob.points.map((item)=>{
 
-                <div className="flex-col basis-full sm:basis-3/4 pl-4 pt-24 sm:pt-0">
-                    <h3 className="">{`${currentJob.charge} en `} <a className="text-aleRed" href={currentJob.url && currentJob.url}>{currentJob.company}</a></h3>
-                    <p className="range py-4 font-sourceCodePro text-sm">{currentJob.date}</p>
-                
-                    <ul className="pl-4 marker:text-aleRed marker:text-lg list-outside list-disc">
-                        {currentJob.points.map((item)=>{
+                                return <li key={currentJob.points.indexOf(item)} className="pl-3 py-2" dangerouslySetInnerHTML={{__html:item}}></li>
+                            })}
+                        </ul>
 
-                            return <li key={currentJob.points.indexOf(item)} className="pl-3 py-2" dangerouslySetInnerHTML={{__html:item}}></li>
-                        })}
-                    </ul>
-
-                </div>
+                    </motion.div>
             </div>
 
             
