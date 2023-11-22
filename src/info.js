@@ -291,7 +291,7 @@ const others = [
         title:'Tenzi Game',
         repo: 'https://github.com/AlejandroDagobah/tenzies-with-react',
         // prod: 'https://github.com/AlejandroDagobah/chess-to-notion',
-        description:'El clásico juego Tenzi donde tienes que tirar los dados hasta tener el mismo numero, esta realizado en React.',
+        description:'El clásico juego Tenzi donde tiras los dados hasta obtener el mismo numero, esta realizado en React.',
         tags: ['React', 'Mini Game'],
     }
 ]
