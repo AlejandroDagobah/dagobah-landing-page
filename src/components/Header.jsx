@@ -100,7 +100,7 @@ export default function Header() {
                         animate={{ y: 0, opacity: 1 }}
                         onHoverStart={{y: -10}}
                     >
-                        <a href="img/CV-alejandro.pdf" download="CV-alejandro.pdf" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight">Curriculum</a>
+                        <a href="img/CV-Alejandro-2023.pdf" download="CV-Alejandro-2023.pdf" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight">Curriculum</a>
                     
                     </motion.div>
 
@@ -116,7 +116,7 @@ export default function Header() {
 
                 <div className={`flex transition-all duration-200 md:hidden ${toggleMenu ? `translate-x-0` : 'translate-x-[110%]' }  px-20 pt-10 bg-secondary fixed top-0 right-0 justify-center w-full h-full z-0 flex-col`}>
                     {navElements}
-                    <a href="img/CV-alejandro.pdf" download="img/CV-alejandro.pdf" className={`rounded-md bg-aleBlue py-2 mt-5 text-primary font-bold text-lg text-center tracking-customWide transition duration-150 hover:bg-aleBlueDarker md:hover:bg-aleBlueLight hover:translate-y-[-0.2rem]`}>Curriculum</a>
+                    <a href="img/CV-Alejandro-2023.pdf" download="CV-Alejandro-2023.pdf" className={`rounded-md bg-aleBlue py-2 mt-5 text-primary font-bold text-lg text-center tracking-customWide transition duration-150 hover:bg-aleBlueDarker md:hover:bg-aleBlueLight hover:translate-y-[-0.2rem]`}>Curriculum</a>
 
                 </div>
 
