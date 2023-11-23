@@ -51,6 +51,14 @@ function App() {
             </motion.div>
 
             <motion.div 
+                initial= {cardVariants.offscreen}
+                whileInView={cardVariants.onscreen}
+                viewport={{ once: true, amount: 0.2 }}
+                className={`${styles.boxWidth} px-3 sm:px-10 lg:px-36 w-full`}>
+              <Websites/>
+            </motion.div>
+
+            <motion.div 
               initial= {cardVariants.offscreen}
               whileInView={cardVariants.onscreen}
               viewport={{ once: true, amount: 0.5 }}
@@ -59,17 +67,9 @@ function App() {
             </motion.div>
 
             <motion.div 
-                initial= {cardVariants.offscreen}
-                whileInView={cardVariants.onscreen}
-                viewport={{ once: true, amount: 0.2 }}
-                className={`${styles.boxWidth} px-4 sm:px-10 lg:px-36`}>
-              <Websites/>
-            </motion.div>
-
-            <motion.div 
               initial= {cardVariants.offscreen}
               whileInView={cardVariants.onscreen}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.2 }}
               className={`max-w-[1000px] sm:pl-10 sm:pr-4 px-3`}>
               <Others/>
             </motion.div>
@@ -81,8 +81,6 @@ function App() {
               className={`${styles.boxWidth} px-3 sm:px-0 md:px-36 lg:px-52`}>       
               <Contact/>
             </motion.div>
-            
-
      
       </div>
 

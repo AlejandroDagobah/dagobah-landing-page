@@ -64,7 +64,7 @@ export default function Work() {
     return(
         <div id="work">
             
-            <h2 className="flex items-center whitespace-nowrap w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleRed">02.</span>Donde he trabajado</h2>
+            <h2 className="flex items-center whitespace-nowrap w-full after:content-[''] after:ml-3 after:block after:relative after:top-1  after:w-full after:h-px after:bg-secondary"><span className="mr-1 text-aleRed">03.</span>Donde he trabajado</h2>
             <div className="flex my-6 flex-wrap	sm:flex-nowrap">
                 <div className="flex absolute left-px sm:left-0 sm:relative max-w-[100%] overflow-x-auto sm:overflow-x-hidden sm:flex-col sm:max-w-[250px]">
                     <div id="navTab" className={`absolute hidden sm:block sm:w-[2px] sm:h-[40px] bg-aleRed rounded-lg transition-all ease-in-out duration-150 delay-200 translate-y-0`}></div>

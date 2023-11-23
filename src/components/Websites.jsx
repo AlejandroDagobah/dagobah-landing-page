@@ -84,7 +84,7 @@ export default function Website() {
                             <p className={`text-sm break-normal ${isOddNum ? 'sm:text-end' : ''}`}>{item.description}</p>
                         </div>
 
-                        <div className="flex gap-3 mt-4">
+                        <div className="grid grid-cols-2 gap-3 mt-4 sm:grid-cols-none sm:flex sm:static">
                             {tags}
                         </div>
 
@@ -93,8 +93,8 @@ export default function Website() {
                             {item.prodURL && <a href={item.prodURL} target="_blank"><IconExternalLink size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
                         </div>
                     </div>
-                    <div className={`rounded-lg absolute t-0 h-full w-full sm:w-auto sm:h-auto sm:static sm:flex-1 bg-aleBlueSky transition-all duration-150 group-hover:bg-primary ${isOddNum ? 'sm:-mr-20' : ''}`}>
-                        <img className="rounded-lg mix-blend-multiply transition-all duration-200  group-hover:backdrop-blur-none h-full w-full object-cover backdrop-blur-lg opacity-40 sm:backdrop-blur-none sm:opacity-100" src={item.img} alt="" />
+                    <div className={`rounded-lg m-4 sm:w-auto sm:h-auto sm:static sm:flex-1 bg-aleBlueSky transition-all duration-150 group-hover:bg-primary ${isOddNum ? 'sm:-mr-20' : ''}`}>
+                        <img className="rounded-lg mix-blend-multiply transition-all duration-200  group-hover:backdrop-blur-none h-full w-full object-cover backdrop-blur-lg  sm:backdrop-blur-none sm:opacity-100" src={item.img} alt="" />
                     </div>
 
                 </motion.a>
