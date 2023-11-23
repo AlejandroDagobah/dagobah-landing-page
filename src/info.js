@@ -79,7 +79,7 @@ const projects = [
                 img: "./img/projects/trigonometry.png",
                 title: "VisualTrig",
                 subtitle: "Proyecto Destacado",
-                description: "Realice los recursos, animación y montaje de tres comerciales con estilo Pixel Art, en conjunto con la consultora de comunicación “Farola” para el Ministerio de la Salud con el fin de educar y promover la conciencia frente al Covid-19, VIH y la VBG (Violencia Basada en Género).",
+                description: "Visualizador de trigonometría realizado en colaboración con Corporación Cultural MCD para enseñar matemáticas y trigonometría a niños y jovenes.",
                 tags: ["GATSBY.JS", "REACT", "TAILWIND", "JAVASCRIPT", "MATH"],
                 repoURL: "https://github.com/AlejandroDagobah/trigonofiesta-dagobah"
             },
@@ -109,7 +109,7 @@ const projects = [
                 img: "./img/quality-1.jpg",
                 title: "Sitio Web Quality B2B",
                 subtitle: "Proyecto Destacado",
-                description: "Sitio web que diseñé y desarrollé para Quality B2B enfocada en presentar la marca y los productos como la solución ambiental a productos de limpieza para negocios, organizaciones y grandes fábricas.",
+                description: "Sitio web que diseñé y desarrollé para Quality B2B enfocada en presentar la marca y productos de limpieza ecológicos para negocios, organizaciones y grandes fábricas.",
                 tags: ['UI/UX Design', 'Web Development', 'Wordpress'],
                 prodURL: "https://joyeriaflordelavida.com/"
             },
@@ -117,7 +117,7 @@ const projects = [
                 img: "./img/fdlv.jpg",
                 title: "E-Commerce Joyería Flor de la Vida",
                 subtitle: "Proyecto Destacado",
-                description: "ealice el diseño UI/UX y desarrolle en Wordpress esta \r\n e-commerce para la empresa “Joyería Flor de la Vida”. Además optimice el SEO para alcanzar los primeros puestos en las búsquedas relacionadas.",
+                description: "Realice el diseño UI/UX y desarrolle en Wordpress esta \r\n e-commerce para la empresa “Joyería Flor de la Vida”. Además optimice el SEO para alcanzar los primeros puestos en las búsquedas relacionadas.",
                 tags: ['e-commerce', 'Web Development', 'Wordpress', 'SEO'],
                 prodURL: "https://joyeriaflordelavida.com/"
             },
@@ -125,7 +125,7 @@ const projects = [
                 img: "./img/publimachine.jpg",
                 title: "E-Commerce Publimachine",
                 subtitle: "Proyecto Destacado",
-                description: "Sitio web que diseñé y desarrollé para una e-commerce de servicios de diseño gráfico",
+                description: "Sitio web que diseñé y desarrollé para una e-commerce de servicios de diseño gráfico.",
                 tags: ['e-commerce', 'UI/UX Design', 'Web Development', 'Wordpress'],
                 repoURL: "#",
                 prodURL: "#"
@@ -199,9 +199,20 @@ const projects = [
 
 const work = [
     {
-        charge:'Web Developer',
+        charge:'Desarrollador Web, CRM Manager y Analista SEO',
+        company:'Markadaria',
+        date:'Octubre 2022 - Noviembre 2023',
+        points:[
+            "Diseñé y desarrollé páginas web para diversos clientes de la agencia, resolviendo necesidades específicas de cada uno. Dependiendo de estas necesidades, se emplearon diferentes tecnologías, siendo las más comunes Gatsby.js o WordPress, y en ocasiones ambas, utilizando GraphQL.",
+            "Trabajé en la optimización para buscadores de las páginas web, manteniendo un estándar alto para el posicionamiento orgánico. Se dio especial atención a la mejora de las tasas de conversión de los anuncios SEM.",
+            "Realicé la integración y administración de diversos CRMs según las necesidades de cada negocio. Adapté los CRMs Kommo y Clientify en función del tipo de negocio, además de proporcionar capacitación a los ejecutivos de ventas. Estas acciones condujeron a una significativa mejora en los procesos y la tasa de conversión de ventas."
+        ],
+        url:"https://markadaria.com/"
+    },
+    {
+        charge:'Desarrollador Web y Diseñador Gráfico',
         company:'Joyería Flor de la Vida',
-        date:'Mayo 2018 - Presente',
+        date:'Mayo 2018 - Septiembre 2022',
         points:[
             "Desarrollé la página Web de la empresa abordando tanto el Diseño UI/UX como el desarrollo en Wordpress, estableciendo la identidad online de Joyería Flor de la Vida como una de las mejores en el mercado.",
             "Trabajé en la optimización para buscadores o (SEO) de la página web donde pudimos alcanzar los primeros puestos en Google de búsquedas relacionadas.",
@@ -210,16 +221,16 @@ const work = [
         url:"https://joyeriaflordelavida.com/"
     },
     {
-        charge:'IT Teacher',
+        charge:'Profesor de Tecnología',
         company:'MCD School',
-        date:'Septiembre 2022 - Presente',
+        date:'Septiembre 2022 - Junio 2023',
         points:[
             "Trabajé medio tiempo enseñando desarrollo web (HTML, CSS, JS) e informática donde cree distintas aplicaciones para la enseñanza a jóvenes y niños entre las que se encuentran: un <a class='text-aleBlue hover:underline' href='https://github.com/AlejandroDagobah/trigonofiesta-dagobah'>Visualizador de trigonometría</a>, un <a class='text-aleBlue hover:underline' href='https://github.com/AlejandroDagobah/apocalyse-game-enable3D'>Juego de supervivencia</a> utilizando Enable.js y un <a class='text-aleBlue hover:underline' href='https://github.com/MCD-School/atom-visuzlizer'>Visualizador de átomos</a> utilizando Three.js.",
         ],
         url:"https://www.miconscienciadespierta.com/"
     },
     {
-        charge:'Freelance Graphic Designer',
+        charge:'Diseñador Gráfico Freelance',
         company:'Farola',
         date:'Abril 2022 - Presente',
         points:[
@@ -230,7 +241,7 @@ const work = [
         url:"https://www.farola.com.ec/"
     },
     {
-        charge:'Freelance Web Developer',
+        charge:'Desarrollador Web y Diseñador Gráfico',
         company:'MCD Manager',
         date:'Julio 2018 - Septiembre 2021',
         points:[

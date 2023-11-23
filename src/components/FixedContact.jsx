@@ -29,7 +29,7 @@ export default function FixedContact() {
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://www.instagram.com/ale_develops/" target="_noreferrer">
+                    <a href="https://www.instagram.com/aledevelops/" target="_noreferrer">
                         <IconBrandInstagram size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
