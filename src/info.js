@@ -81,7 +81,8 @@ const projects = [
                 subtitle: "Proyecto Destacado",
                 description: "Visualizador de trigonometría realizado en colaboración con Corporación Cultural MCD para enseñar matemáticas y trigonometría a niños y jovenes.",
                 tags: ["GATSBY.JS", "REACT", "TAILWIND", "JAVASCRIPT", "MATH"],
-                repoURL: "https://github.com/AlejandroDagobah/trigonofiesta-dagobah"
+                prodURL: "https://visualtrig.netlify.app/",
+                repoURL: "https://github.com/AlejandroDagobah/VisualTrig"
             },
             {
                 img: "./img/projects/chessToNotion.png",
