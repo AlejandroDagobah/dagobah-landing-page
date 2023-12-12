@@ -147,7 +147,7 @@ html {
   } 
   
   .dropMenuOnUp{
-    @apply bg-primary/60 backdrop-blur-md drop-shadow-md py-4 sm:py-6 -translate-y-[85px];
+    @apply bg-primary/60 backdrop-blur-md py-4 sm:py-6 -translate-y-[85px];
   }
 
   .dropMenuOnDown{
