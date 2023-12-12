@@ -80,9 +80,18 @@ const projects = [
                 title: "VisualTrig",
                 subtitle: "Proyecto Destacado",
                 description: "Visualizador de trigonometría realizado en colaboración con Corporación Cultural MCD para enseñar matemáticas y trigonometría a niños y jovenes.",
-                tags: ["GATSBY.JS", "REACT", "TAILWIND", "JAVASCRIPT", "MATH"],
+                tags: ["REACT", "TAILWIND", "JAVASCRIPT", "MATH"],
                 prodURL: "https://visualtrig.netlify.app/",
                 repoURL: "https://github.com/AlejandroDagobah/VisualTrig"
+            },
+            {
+                img: "./img/innova-1.jpg",
+                title: "Sitio Web Innova Egroup",
+                subtitle: "Proyecto Destacado",
+                description: "Diseño, desarrollo y optimización de un sitio web para una constructora ecologíca centrada en la construcción de conjuntos y edificios residenciales con materiales y ladrillos ecológicos",
+                tags: ["GATSBY.JS", "REACT", "TAILWIND", "JAVASCRIPT"],
+                repoURL: "https://github.com/AlejandroDagobah/innova-website-gatsby",
+                prodURL: "https://innova-egroup.com.ec/"
             },
             {
                 img: "./img/projects/chessToNotion.png",
@@ -91,45 +100,35 @@ const projects = [
                 description: "Registra tus partidas de Chess.com a Notion, guarda la repericion las derrotas y victorias tiempos y más, útil para registrar vicorias de participantes en clubs.",
                 tags: ["REACT", "TAILWIND", "NODE.JS"],
                 repoURL: "https://github.com/AlejandroDagobah/chess-to-notion"
-            },
-            {
-                img: "./img/innova-1.jpg",
-                title: "Innova Egroup Website",
-                subtitle: "Proyecto Destacado",
-                description: "Diseño, desarrollo y optimización de un sitio web para una constructora ecologíca centrada en la construcción de conjuntos y edificios residenciales con materiales y ladrillos ecológicos",
-                tags: ["GATSBY.JS", "TAILWIND", "JAVASCRIPT"],
-                repoURL: "https://github.com/AlejandroDagobah/innova-website-gatsby",
-                prodURL: "https://innova-egroup.com.ec/"
             }
         ]
     },
     {
-        title: "Web Design",
+        title: "Wordpress Development",
         projects: [
             {
                 img: "./img/quality-1.jpg",
                 title: "Sitio Web Quality B2B",
                 subtitle: "Proyecto Destacado",
                 description: "Sitio web que diseñé y desarrollé para Quality B2B enfocada en presentar la marca y productos de limpieza ecológicos para negocios, organizaciones y grandes fábricas.",
-                tags: ['UI/UX Design', 'Web Development', 'Wordpress'],
-                prodURL: "https://joyeriaflordelavida.com/"
+                tags: ['UI/UX DESIGN', 'WORDPRESS'],
+                prodURL: "https://qualityb2b.com/"
             },
             {
                 img: "./img/fdlv.jpg",
                 title: "E-Commerce Joyería Flor de la Vida",
                 subtitle: "Proyecto Destacado",
                 description: "Realice el diseño UI/UX y desarrolle en Wordpress esta \r\n e-commerce para la empresa “Joyería Flor de la Vida”. Además optimice el SEO para alcanzar los primeros puestos en las búsquedas relacionadas.",
-                tags: ['e-commerce', 'Web Development', 'Wordpress', 'SEO'],
+                tags: ['E-COMMERCE', 'WORDPRESS', 'SEO'],
                 prodURL: "https://joyeriaflordelavida.com/"
             },
             {
-                img: "./img/publimachine.jpg",
-                title: "E-Commerce Publimachine",
+                img: "./img/probox-web.jpg",
+                title: "Sitio Web Probox",
                 subtitle: "Proyecto Destacado",
-                description: "Sitio web que diseñé y desarrollé para una e-commerce de servicios de diseño gráfico.",
-                tags: ['e-commerce', 'UI/UX Design', 'Web Development', 'Wordpress'],
-                repoURL: "#",
-                prodURL: "#"
+                description: "Realice el diseño de UI/UX y desarrollé el tema de Wordpress para una courier de Ecuador siguiendo buenas practicas de SEO",
+                tags: ['UI/UX Design', 'WORDPRESS', 'SEO'],
+                prodURL: "https://probox.com.ec/"
             }
         ]
     },    

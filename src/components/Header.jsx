@@ -70,6 +70,7 @@ export default function Header() {
     React.useEffect(()=>{
         if (toggleMenu) {
             document.body.style.overflowY = "hidden"
+            setScrollState(0)
         }else{
             document.body.style.overflowY = "scroll"
 

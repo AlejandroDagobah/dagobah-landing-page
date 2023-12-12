@@ -6,6 +6,8 @@ import {projects} from "../info";
 import { motion, Variants, AnimatePresence } from "framer-motion"
 import {IconBrandGithub, IconExternalLink} from "@tabler/icons";
 
+import Image1 from '../assets/quality-1.jpg'
+
 export const variants = {
     show: {
       opacity: 1,
@@ -122,7 +124,7 @@ export default function Website() {
             </div>
             
             <div className="flex flex-col py-12 sm:flex-row sm:justify-between">
-                <div className="flex absolute left-px sm:left-0 sm:relative max-w-[100%] overflow-x-auto sm:overflow-x-hidden sm:flex-col sm:w-[450px]">
+                <div className="flex absolute left-px sm:left-0 sm:relative max-w-[100%] overflow-x-auto sm:overflow-x-hidden sm:flex-col sm:min-w-[200px]">
                     {buttons}
                 </div>
 
