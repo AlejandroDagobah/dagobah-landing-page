@@ -36,10 +36,10 @@ const cardVariants = {
 function App() {
   
   const location = useLocation();
-  useEffect(() => {
+  React.useEffect(() => {
     ReactGA.pageview(location.pathname + location.search);
   }, [location]);
-  
+
   return (
     <div className={`App`}>
 
