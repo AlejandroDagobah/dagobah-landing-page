@@ -83,14 +83,14 @@ export default function Header() {
     return(
 
         <div className="w-[100%]">
-            <div className={`fixed flex z-10 transition-all duration-200 md:hidden ${toggleMenu ? `translate-x-0` : 'translate-x-[110%]' }  px-20 pt-10 bg-secondary top-0 right-0 justify-center w-full h-full flex-col`}>
+            <div className={`fixed flex transition-all duration-200 md:hidden ${toggleMenu ? `translate-x-0` : 'translate-x-[110%]' }  px-20 pt-10 bg-secondary top-0 right-0 justify-center w-full h-full flex-col`}>
                 {navElements}
                 <a href="img/CV-Alejandro-2023.pdf" download="CV-Alejandro-2023.pdf" className={`rounded-md bg-aleBlue py-2 mt-5 text-primary font-bold text-lg text-center tracking-customWide transition duration-150 hover:bg-aleBlueDarker md:hover:bg-aleBlueLight hover:translate-y-[-0.2rem]`}>Curriculum</a>
                 <div className="icon cursor-pointer absolute top-6 left-[90%]">
                     {toggleMenu ? <IconX  size={30} color={toggleMenu ? '#F5F5F5' : '#0D1821'} stroke={3} onClick={() => setToggleMenu(prevToggle=>(!prevToggle))}/>  : <IconMenu2  size={30} color="black" stroke={3} onClick={() =>  setToggleMenu(prevToggle=>(!prevToggle))}/> }
                 </div>
             </div>
-            <div className={`fixed top-0 start-0 z-5 flex justify-between w-full px-[1rem] sm:px-[5rem] dropMenuOff transition-all ease-in-out delay-200 ${scrollClassName}`}>
+            <div className={` fixed top-0 start-0 flex justify-between w-full px-[1rem] sm:px-[5rem] dropMenuOff transition-all ease-in-out delay-200 ${scrollClassName} z-[100]`}>
                 <div className="w-full flex justify-between items-center navbar">
                     <motion.div
                         initial={{opacity:0}}
