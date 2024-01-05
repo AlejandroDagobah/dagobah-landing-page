@@ -14,7 +14,6 @@ import { motion, Variants } from "framer-motion"
 import ReactGA from 'react-ga'
 import { useLocation } from 'react-router-dom';
 
-ReactGA.initialize('G-26V5T383B8')
 
 
 
