@@ -9,9 +9,14 @@ import Work from './components/Work'
 import Contact from './components/Contact'
 import styles from './style';
 import FixedContact from './components/FixedContact'
-
-
 import { motion, Variants } from "framer-motion"
+
+import ReactGA from 'react-ga'
+import { useLocation } from 'react-router-dom';
+
+ReactGA.initialize('G-26V5T383B8')
+
+
 
 const cardVariants = {
   offscreen: {
@@ -30,7 +35,11 @@ const cardVariants = {
 
 function App() {
   
-
+  const location = useLocation();
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+  
   return (
     <div className={`App`}>
 
