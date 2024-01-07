@@ -1,6 +1,6 @@
 import React from "react";
 
-import {IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconBrandDribbble, IconBrandWhatsapp, IconStar, IconGitFork} from "@tabler/icons";
+import {IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconBrandDribbble, IconBrandBehance, IconBrandWhatsapp, IconStar, IconGitFork} from "@tabler/icons";
 
 
 export default function FixedContact() {
@@ -23,19 +23,19 @@ export default function FixedContact() {
                         <IconBrandLinkedin size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
-                <li className="py-2 px-3 lg:px-0">
+                {/* <li className="py-2 px-3 lg:px-0">
                     <a href="https://twitter.com/aledagobah" target="_noreferrer">
                         <IconBrandTwitter size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
-                </li>
+                </li> */}
                 <li className="py-2 px-3 lg:px-0">
                     <a href="https://www.instagram.com/aledevelops/" target="_noreferrer">
                         <IconBrandInstagram size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">
-                    <a href="https://dribbble.com/Dagobah" target="_noreferrer">
-                        <IconBrandDribbble size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
+                    <a href="https://www.behance.net/alejandrocc2" target="_noreferrer">
+                        <IconBrandBehance size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/>
                     </a>
                 </li>
                 <li className="py-2 px-3 lg:px-0">

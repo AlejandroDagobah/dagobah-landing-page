@@ -81,7 +81,7 @@ export default function Website() {
                     
                     <div className={`flex flex-1 flex-col justify-center z-10 px-6 py-8 sm:px-0  ${isOddNum ? 'sm:items-end' : 'sm:-mr-20'}`}>
                         <span className="font-crimsonPro text-xl text-aleBlue">{item.subtitle}</span>
-                        <h3 className="font-crimsonPro text-3xl mb-4 break-normal">{item.title}</h3>
+                        <h3 className={`font-crimsonPro text-3xl mb-4 break-normal ${isOddNum ? 'text-right' : 'text-left'}`}>{item.title}</h3>
                         <div className="sm:px-4 sm:py-6 sm:border-secondary sm:border-2 sm:rounded-md sm:bg-primary/60 md:backdrop-blur-md sm:drop-shadow-lg">
                             <p className={`text-sm break-normal ${isOddNum ? 'sm:text-end' : ''}`}>{item.description}</p>
                         </div>

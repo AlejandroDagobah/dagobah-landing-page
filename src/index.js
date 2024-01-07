@@ -11,7 +11,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
-ReactGA.initialize('G-26V5T383B8')
+// ReactGA.initializ('G-26V5T383B8')
 
 const router = createBrowserRouter([
     {

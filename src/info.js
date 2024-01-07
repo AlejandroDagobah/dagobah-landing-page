@@ -104,6 +104,35 @@ const projects = [
         ]
     },
     {
+        title: "Diseño Gráfico",
+        projects: [
+            {
+                img: "./img/projects/campaña-ministerio-salud-design.jpg",
+                title: "Campaña Tu Eres Prioridad",
+                subtitle: "Proyecto Destacado",
+                description: "Branding para una campaña de concientización del COVID, VIH y VBG para el Ministerio de Salud del Ecuador",
+                tags: ["PHOTOSHOP", "ILLUSTRATOR", "BRANDING",],
+                prodURL: "https://www.behance.net/gallery/188245643/Campana-Tu-Eres-Prioridad-Ministerio-de-Salud-EC"
+            },
+            {
+                img: "./img/projects/baby-amaranth-packaging-design.jpg",
+                title: "Diseño de Empaque Baby Amaranth",
+                subtitle: "Proyecto Destacado",
+                description: "Diseño de empaque para un super alimento andino instantáneo destinado para el consumo de bebés y madres en etapa de lactancia o gestación.",
+                tags: ["PHOTOSHOP", "ILLUSTRATOR", "PACKAGING DESIGN",],
+                prodURL: "https://www.behance.net/gallery/188301559/Packaging-Design-Superfood-Amaranth-Powder"
+            },
+            {
+                img: "./img/projects/logo-design.jpg",
+                title: "Portfolio de Diseño de Logotipos",
+                subtitle: "Proyecto Destacado",
+                description: "Registra tus partidas de Chess.com a Notion, guarda la repericion las derrotas y victorias tiempos y más, útil para registrar vicorias de participantes en clubs.",
+                tags: ["PHOTOSHOP", "ILLUSTRATOR", "LOGO DESIGN",],
+                prodURL: "https://www.behance.net/gallery/188305817/Portfolio-de-Diseno-de-Logotipos"
+            }
+        ]
+    },
+    {
         title: "Wordpress Development",
         projects: [
             {
