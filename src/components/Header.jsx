@@ -112,7 +112,7 @@ export default function Header() {
                             animate={{ y: 0, opacity: 1 }}
                             onHoverStart={{y: -10}}
                         >
-                            <a href="img/CV-Alejandro-2023.pdf" download="CV-Alejandro-2023.pdf" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight">Curriculum</a>
+                            <a href="img/CV-Alejandro-Cevallos-2025.pdf" download="CV-Alejandro-Cevallos-2025.pdf" className="rounded-md border-2 border-aleBlue px-5 py-1 ml-5 text-center text-aleBlue font-medium transition duration-150 hover:bg-aleBlueLight">Curriculum</a>
                         
                         </motion.div>
 

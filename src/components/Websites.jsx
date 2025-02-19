@@ -73,13 +73,13 @@ export default function Website() {
                     viewport={{ once: true, amount: 0.3 }}
                     variants={variants}
                     href={item.prodURL ? item.prodURL : item.repoURL}
-                    whileHover={{padding:'0px 20px'}}
-                    whileTap={{padding:'0px 20px'}}
+                    // whileHover={{scale: 1.02}}
+                    // whileTap={{scale: 1.02}}
                     target="_blank"
 
                     className={`group relative flex flex-col justify-end border-secondary border-2 w-full min-h-[300px] mb-8 sm:mb-28 sm:flex-row sm:justify-center sm:border-0 ${isOddNum ? styleOpposite : ''}`}>
                     
-                    <div className={`flex flex-1 flex-col justify-center z-10 px-6 py-8 sm:px-0  ${isOddNum ? 'sm:items-end' : 'sm:-mr-20'}`}>
+                    <div className={`transition-transform duration-300 ease-in-out flex flex-1 flex-col justify-center z-10 px-6 py-8 sm:px-0  ${isOddNum ? 'md:items-end group-hover:-translate-x-14' : 'md:-mr-20 group-hover:translate-x-14'}`}>
                         <span className="font-crimsonPro text-xl text-aleBlue">{item.subtitle}</span>
                         <h3 className={`font-crimsonPro text-3xl mb-4 break-normal ${isOddNum ? 'text-right' : 'text-left'}`}>{item.title}</h3>
                         <div className="sm:px-4 sm:py-6 sm:border-secondary sm:border-2 sm:rounded-md sm:bg-primary/60 md:backdrop-blur-md sm:drop-shadow-lg">
@@ -95,8 +95,8 @@ export default function Website() {
                             {item.prodURL && <a href={item.prodURL} target="_blank"><IconExternalLink size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
                         </div>
                     </div>
-                    <div className={`rounded-lg m-4 sm:w-auto sm:h-auto sm:static sm:flex-1 bg-aleBlueSky transition-all duration-150 group-hover:bg-primary ${isOddNum ? 'sm:-mr-20' : ''}`}>
-                        <img className="rounded-lg mix-blend-multiply transition-all duration-200  group-hover:backdrop-blur-none h-full w-full object-cover backdrop-blur-lg  sm:backdrop-blur-none sm:opacity-100" src={item.img} alt="" />
+                    <div className={`rounded-lg m-4 sm:w-auto sm:h-auto sm:static sm:flex-1 bg-black transition-all duration-150  ${isOddNum ? 'sm:-mr-20' : ''}`}>
+                        <img className="rounded-lg opacity-80 transition-all duration-200 group-hover:opacity-100 h-full w-full object-cover" src={item.img} alt="" />
                     </div>
 
                 </motion.a>
