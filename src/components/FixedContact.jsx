@@ -1,6 +1,6 @@
 import React from "react";
 
-import {IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconBrandInstagram, IconBrandDribbble, IconBrandBehance, IconBrandWhatsapp, IconStar, IconGitFork} from "@tabler/icons";
+import {IconBrandGithub, IconBrandLinkedin, IconBrandInstagram, IconBrandBehance, IconBrandWhatsapp, IconStar, IconGitFork} from "@tabler/icons";
 
 
 export default function FixedContact() {

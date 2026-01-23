@@ -1,7 +1,7 @@
 import React from "react";
 import {work} from "../info";
 
-import { motion, Variants, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 export const variants = {

@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'atropos/css'
-import ReactGA from 'react-ga'
 
 import {
     createBrowserRouter,

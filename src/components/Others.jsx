@@ -82,13 +82,13 @@ export default function Other() {
                                                 <othersCard.icon size={65} stroke={1.5} className="iconCard -ml-[6px] transition-all duration-300 text-secondary"/>}
                                                 <div className="flex flex-row">
                                                     {othersCard.repo !== undefined && 
-                                                        <a href={othersCard.repo} target="_blank">
+                                                        <a href={othersCard.repo} target="_blank" rel="noreferrer noopener">
                                                             <othersCard.iconLink size={30} className="pb-2 transition duration-200 text-secondary hover:text-aleRed"/>
                                                         </a>
                                                     }
                                                     {
                                                     othersCard.prod !== undefined && 
-                                                        <a href={othersCard.prod} target="_blank">
+                                                        <a href={othersCard.prod} target="_blank" rel="noreferrer noopener">
                                                             <IconLink size={30}  className="pb-2 transition duration-200 hover:text-aleRed"/>
                                                         </a>
                                                     }

@@ -3,7 +3,7 @@ import Atropos from "atropos/react";
 import styles from "../style"
 import {websites} from "../info";
 import {projects} from "../info";
-import { motion, Variants, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import {IconBrandGithub, IconExternalLink} from "@tabler/icons";
 
 import Image1 from '../assets/quality-1.jpg'
@@ -64,7 +64,7 @@ export default function Website() {
         })
 
         var division = i % 2;
-        const isOddNum = division == 1 ? true : false
+        const isOddNum = division === 1 ? true : false
         const styleOpposite = 'sm:flex-row-reverse'
         
         return <motion.a 
@@ -76,6 +76,7 @@ export default function Website() {
                     // whileHover={{scale: 1.02}}
                     // whileTap={{scale: 1.02}}
                     target="_blank"
+                    rel="noreferrer noopener"
 
                     className={`group relative flex flex-col justify-end border-secondary border-2 w-full min-h-[300px] mb-8 sm:mb-28 sm:flex-row sm:justify-center sm:border-0 ${isOddNum ? styleOpposite : ''}`}>
                     
@@ -91,8 +92,8 @@ export default function Website() {
                         </div>
 
                         <div className="flex gap-3 mt-3">
-                            {item.repoURL && <a href={item.repoURL} target="_blank"><IconBrandGithub size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
-                            {item.prodURL && <a href={item.prodURL} target="_blank"><IconExternalLink size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
+                            {item.repoURL && <a href={item.repoURL} target="_blank" rel="noreferrer noopener"><IconBrandGithub size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
+                            {item.prodURL && <a href={item.prodURL} target="_blank" rel="noreferrer noopener"><IconExternalLink size={25} className="transition duration-200 text-secondary hover:text-aleRed cursor-pointer"/></a>}
                         </div>
                     </div>
                     <div className={`rounded-lg m-4 sm:w-auto sm:h-auto sm:static sm:flex-1 bg-black transition-all duration-150  ${isOddNum ? 'sm:-mr-20' : ''}`}>
@@ -112,7 +113,6 @@ export default function Website() {
         
         setCurrentProject(projects[indice])
         setCurrentProjNum(indice)
-        var navTab = document.getElementById('navTabProjWeb')
 
     }
 

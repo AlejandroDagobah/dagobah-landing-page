@@ -13,7 +13,7 @@ export default function About() {
                         Soy un desarrollador obsesionado con la creación de sitios web, aplicaciones y experiencias digitales <b>visualmente impresionantes</b>, que a su vez mantengan un <b>alto rendimiento</b>, fluidez y facilidad de uso. Mi enfoque está en fusionar la <b>creatividad artística</b> con una <b>ingeniería sólida</b>, diseñando interfaces que no solo brillan por su estética, sino que también ofrezcan una <b>experiencia intuitiva</b> y sin fricciones. Mi misión es entregar productos que no solo se vean bien, sino que hagan que los usuarios disfruten cada segundo de interacción.
                         <br/>
                         <br/>
-                        Actualmente soy <b>Lead Developer en <a className="text-aleRed" href="https://www.hipopink.com" target="_blank">Hipopink</a></b>, lidero el equipo de desarrollo web, supervisando todo el proceso desde el descubrimiento del cliente y la planificación del proyecto hasta el diseño, desarrollo y despliegue de sitios web personalizados. Soy un defensor de <b>soluciones escalables y de alto rendimiento</b>, utilizando React, Gatsby y GraphQL para arquitecturas Headless CMS.
+                        Actualmente soy <b>Lead Developer en <a className="text-aleRed" href="https://www.hipopink.com" target="_blank" rel="noreferrer noopener">Hipopink</a></b>, lidero el equipo de desarrollo web, supervisando todo el proceso desde el descubrimiento del cliente y la planificación del proyecto hasta el diseño, desarrollo y despliegue de sitios web personalizados. Soy un defensor de <b>soluciones escalables y de alto rendimiento</b>, utilizando React, Gatsby y GraphQL para arquitecturas Headless CMS.
                         <br/>
 
                         <br/>

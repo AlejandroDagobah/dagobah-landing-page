@@ -2,7 +2,7 @@ import React from "react";
 
 import {navLinks} from "../constants/index"
 import { IconMenu2,  IconX} from "@tabler/icons";
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 
 export default function Header() {
