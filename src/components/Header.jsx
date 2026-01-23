@@ -54,6 +54,9 @@ export default function Header() {
       scrollClassName = "dropMenuOnDown"
     break;
     
+    default:
+      scrollClassName = "dropMenuOff"
+    break;
    }
 
    if(toggleMenu){
@@ -98,7 +101,7 @@ export default function Header() {
                         transition={{type: "spring", duration:1}}
 
                     >
-                        <a href="#">
+                        <a href="/">
                             <img src="img/aledevelops-logo.png" className="w-52 sm:w-[180px]" alt="logo de aledevelops desarrollador web de Ecuador"/>
                         </a>
                     </motion.div>

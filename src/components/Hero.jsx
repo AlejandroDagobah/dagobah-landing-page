@@ -3,7 +3,7 @@ import Alevector from "./Alevector";
 
 import styles from "../style";
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 export default function Hero() {
 

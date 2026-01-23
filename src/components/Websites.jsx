@@ -1,12 +1,7 @@
 import React from "react";
-import Atropos from "atropos/react";
-import styles from "../style"
-import {websites} from "../info";
 import {projects} from "../info";
 import { motion } from "framer-motion"
 import {IconBrandGithub, IconExternalLink} from "@tabler/icons";
-
-import Image1 from '../assets/quality-1.jpg'
 
 export const variants = {
     show: {
@@ -51,10 +46,6 @@ export default function Website() {
                 {item.title}
             </button>
     })
-
-    function turnOn(params) {
-        
-    }
 
     const projectsItems = currentProject.projects.map((item, i)=>{
 

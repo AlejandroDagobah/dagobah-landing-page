@@ -112,7 +112,7 @@ export default function Other() {
                 return website
             })
         })
-    }, [currentProjNum])
+    }, [currentProjNum, currentOthers])
 
 
 
